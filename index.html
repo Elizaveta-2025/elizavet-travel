@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elizavet Travel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+<!-- The font 'mr_KindlyJasmineG' is a custom font. Please ensure it is loaded correctly, for example, using @font-face. -->
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:hero */
+.hero-section {
+    padding-top: 40px;
+    padding-bottom: 120px;
+    position: relative;
+    overflow: hidden;
+}
+.hero-container {
+    position: relative;
+    z-index: 2;
+}
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 180px;
+}
+.logo img {
+    width: 41px;
+    height: 57px;
+}
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+.main-nav a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 500;
+}
+.main-nav a.active {
+    color: var(--color-primary);
+}
+.social-dots img {
+    width: 31px;
+    height: 110px;
+}
+.hero-content {
+    max-width: 770px;
+}
+.hero-text {
+    position: relative;
+    margin-bottom: 50px;
+}
+.title-main {
+    font-size: 72px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+.title-sub-wrapper {
+    position: relative;
+    margin-top: -20px;
+}
+.title-brand {
+    font-size: 96px;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1.2;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--color-text);
+    text-stroke: 2px var(--color-text);
+}
+.title-connector {
+    font-family: 'mr_KindlyJasmineG', cursive;
+    font-size: 64px;
+    color: var(--color-primary);
+    position: absolute;
+    top: 20px;
+    left: 160px;
+    z-index: 3;
+}
+.hero-btn {
+    padding: 16px 54px;
+}
+.arrow-icon {
+    margin-left: 10px;
+}
+.hero-bg-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.hero-bg-elements .bg-rect-1 {
+    position: absolute;
+    background-color: var(--color-light-grey);
+    border-radius: 10px;
+    width: 367px;
+    height: 227px;
+    top: 284px;
+    left: 50%;
+    transform: translateX(100px);
+}
+.hero-bg-elements .bg-rect-2 {
+    position: absolute;
+    background-color: var(--color-light-grey);
+    border-radius: 10px;
+    width: 367px;
+    height: 227px;
+    top: 284px;
+    left: 50%;
+    transform: translateX(-480px);
+}
+
+@media (max-width: 1200px) {
+    .hero-bg-elements { display: none; }
+}
+@media (max-width: 768px) {
+    .main-header { flex-direction: column; align-items: flex-start; gap: 20px; margin-bottom: 80px; }
+    .main-nav ul { flex-direction: column; gap: 10px; }
+    .social-dots { display: none; }
+    .title-main { font-size: 48px; }
+    .title-brand { font-size: 64px; -webkit-text-stroke-width: 1px; }
+    .title-connector { font-size: 40px; top: 10px; left: 80px; }
+}
+
+/* CSS for section section:popular-excursions */
+.excursions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+.excursion-card {
+    background-color: var(--color-light-grey);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.card-img-placeholder {
+    height: 220px;
+    background-color: var(--color-light-grey);
+    display: block;
+}
+.card-content {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.card-category {
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+}
+.card-title {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    line-height: 1.2;
+}
+.card-details {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.card-description {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 0 0 20px 0;
+    flex-grow: 1;
+}
+.card-btn {
+    padding: 12px 24px;
+    font-size: 12px;
+    align-self: flex-start;
+}
+.slider-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.slider-arrows {
+    width: 82px;
+    height: 43px;
+}
+.slider-progress-bar {
+    flex-grow: 1;
+    height: 2px;
+    background-color: var(--color-light-grey);
+    position: relative;
+}
+.slider-progress {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 4px;
+    width: 15%;
+    background-color: var(--color-primary);
+}
+
+@media (max-width: 1024px) {
+    .excursions-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .excursions-grid { grid-template-columns: 1fr; }
+    .section-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+}
+
+/* CSS for section section:about-us */
+.about-section {
+    background-color: var(--color-background-alt);
+}
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+.about-image-stack {
+    position: relative;
+    height: 400px;
+}
+.image-bg-blue {
+    position: absolute;
+    width: 550px;
+    height: 376px;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+}
+.image-placeholder {
+    position: absolute;
+    width: 550px;
+    height: 376px;
+    background-color: var(--color-light-grey);
+    border-radius: 10px;
+    top: 23px;
+    left: 28px;
+}
+.about-content h2 {
+    margin-bottom: 40px;
+}
+.about-content p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7;
+    margin: 0 0 20px 0;
+}
+
+@media (max-width: 1024px) {
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+    .about-image-stack { height: 300px; margin-bottom: 40px; }
+    .image-bg-blue, .image-placeholder { width: 100%; max-width: 550px; }
+}
+
+/* CSS for section section:excursion-types */
+.types-header {
+    max-width: 550px;
+    margin-bottom: 40px;
+}
+.types-header p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.types-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.type-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 338px;
+}
+.type-card-img {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-light-grey);
+}
+.type-card-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 22px;
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 141.42%);
+}
+.type-card-label.label-1 {
+    border-radius: 0px 0px 10px 0px;
+}
+.type-card-label.label-2 {
+    border-radius: 0px 0px 10px 10px;
+}
+
+@media (max-width: 1024px) {
+    .types-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .types-grid { grid-template-columns: 1fr; }
+}
+
+/* CSS for section section:gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 150px;
+    grid-auto-flow: dense;
+    gap: 20px;
+}
+.gallery-item {
+    background-color: var(--color-light-grey);
+    border-radius: 10px;
+}
+.item-1 { grid-column: span 2; grid-row: span 2; }
+.item-2 { grid-column: span 2; grid-row: span 2; }
+.item-3 { grid-column: span 2; grid-row: span 4; }
+.item-4 { grid-column: span 1; grid-row: span 2; }
+.item-5 { grid-column: span 1; grid-row: span 1; }
+.item-6 { grid-column: span 1; grid-row: span 2; }
+.item-7 { grid-column: span 1; grid-row: span 1; }
+.item-8 { grid-column: span 1; grid-row: span 2; }
+
+@media (max-width: 768px) {
+    .gallery-item { grid-column: span 2 !important; grid-row: span 2 !important; }
+}
+
+/* CSS for section section:reviews */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 120px;
+    margin-bottom: 60px;
+}
+.review-card {
+    position: relative;
+    padding-top: 38px;
+}
+.review-card-merged-image {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.review-card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 322px;
+    background-color: var(--color-background-alt);
+    border-radius: 10px;
+}
+.review-avatar {
+    position: absolute;
+    top: -38px;
+    left: 38px;
+    width: 206px;
+    height: 245px;
+    background-color: var(--color-light-grey);
+    border-radius: 10px;
+}
+.review-content {
+    position: relative;
+    z-index: 2;
+    margin-left: 270px;
+    padding-right: 20px;
+}
+.review-author {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+.review-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .reviews-grid { grid-template-columns: 1fr; gap: 80px; }
+}
+@media (max-width: 768px) {
+    .review-card { padding-top: 0; }
+    .review-card-merged-image { display: none; } /* Hide complex layout on mobile */
+    .review-content { margin-left: 0; padding: 20px; background-color: var(--color-background-alt); border-radius: 10px; }
+}
+
+/* CSS for section section:contact */
+.contact-section {
+    background-color: var(--color-background-dark);
+}
+.contact-form-wrapper {
+    max-width: 360px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-form-wrapper h2 {
+    margin-bottom: 10px;
+}
+.contact-form-wrapper p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+.contact-form {
+    text-align: left;
+}
+.form-group {
+    margin-bottom: 45px;
+}
+.form-group input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color-text);
+    background-color: transparent;
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--color-text);
+}
+.form-group input:focus {
+    outline: none;
+    border-bottom-color: var(--color-primary);
+}
+.contact-form .btn {
+    width: 230px;
+    margin: 30px auto 0;
+    display: block;
+}
+
+/* CSS for section section:footer */
+.site-footer {
+    background-color: var(--color-background-alt);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+.footer-logo img {
+    width: 80px;
+    height: 114px;
+}
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.footer-nav a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 500;
+}
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact-item span, .contact-item a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text);
+    text-decoration: none;
+}
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+}
+.social-icons img {
+    width: 110px;
+    height: 30px;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+}
+
+@media (max-width: 1024px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+    }
+    .footer-nav ul, .footer-contacts, .footer-social {
+        align-items: center;
+    }
+    .social-icons img {
+        transform: none;
+    }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="hero" class="hero-section">
+    <div class="container hero-container">
+        <header class="main-header">
+            <a href="#hero" class="logo">
+                <img src="images/2362948918c64aa97762b2a3a082962b9f5603a2.png" alt="Elizavet Travel Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero" class="active">Главная</a></li>
+                    <li><a href="#popular-excursions">Экскурсии</a></li>
+                    <li><a href="#">Личный кабинет</a></li>
+                </ul>
+            </nav>
+            <div class="social-dots">
+                <img src="images/1_3424.svg" alt="Social media links">
+            </div>
+        </header>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="title-main">ПУТЕШЕСТВУЙ</h1>
+                <div class="title-sub-wrapper">
+                    <span class="title-connector">вместе с</span>
+                    <h2 class="title-brand">Elizavet Travel</h2>
+                </div>
+            </div>
+            <a href="#popular-excursions" class="btn hero-btn">
+                К экскурсиям
+                <img src="images/1_3423.svg" alt="arrow icon" class="arrow-icon">
+            </a>
+        </div>
+        
+        <div class="hero-bg-elements">
+            <div class="bg-rect-1"></div>
+            <div class="bg-rect-2"></div>
+        </div>
+    </div>
+</section>
+<section id="popular-excursions">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Популярные экскурсии</h2>
+            <a href="#" class="link-arrow">Все экскурсии</a>
+        </div>
+        <div class="excursions-slider">
+            <div class="excursions-grid">
+                <div class="excursion-card">
+                    <img src="" alt="Обзорная по Сочи" class="card-img-placeholder">
+                    <div class="card-content">
+                        <p class="card-category">Автобусный тур</p>
+                        <h3 class="card-title">Обзорная по Сочи (из Адлера)</h3>
+                        <div class="card-details">
+                            <span class="detail-item"><img src="images/1_3347.svg" alt="icon">6 часов</span>
+                            <span class="detail-item"><img src="images/1_3350.svg" alt="icon">618 ₽</span>
+                        </div>
+                        <p class="card-description">Приглашаем вас на экскурсию "Обзорная по Большому Сочи": Экскурсия начнется с подъёма на гору Большой Ахун - это высшая точка (665 метров) на побережьи Сочи...</p>
+                        <a href="#" class="btn card-btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="excursion-card">
+                    <img src="" alt="Обзорная по Сочи" class="card-img-placeholder">
+                    <div class="card-content">
+                        <p class="card-category">Автобусный тур</p>
+                        <h3 class="card-title">Обзорная по Сочи (из Адлера)</h3>
+                        <div class="card-details">
+                            <span class="detail-item"><img src="images/1_3362.svg" alt="icon">6 часов</span>
+                            <span class="detail-item"><img src="images/1_3365.svg" alt="icon">618 ₽</span>
+                        </div>
+                        <p class="card-description">Приглашаем вас на экскурсию "Обзорная по Большому Сочи": Экскурсия начнется с подъёма на гору Большой Ахун - это высшая точка (665 метров) на побережьи Сочи...</p>
+                        <a href="#" class="btn card-btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="excursion-card">
+                    <img src="" alt="Обзорная по Сочи" class="card-img-placeholder">
+                    <div class="card-content">
+                        <p class="card-category">Автобусный тур</p>
+                        <h3 class="card-title">Обзорная по Сочи (из Адлера)</h3>
+                        <div class="card-details">
+                            <span class="detail-item"><img src="images/1_3377.svg" alt="icon">6 часов</span>
+                            <span class="detail-item"><img src="images/1_3380.svg" alt="icon">618 ₽</span>
+                        </div>
+                        <p class="card-description">Приглашаем вас на экскурсию "Обзорная по Большому Сочи": Экскурсия начнется с подъёма на гору Большой Ахун - это высшая точка (665 метров) на побережьи Сочи...</p>
+                        <a href="#" class="btn card-btn">Подробнее</a>
+                    </div>
+                </div>
+                <div class="excursion-card">
+                    <img src="" alt="Обзорная по Сочи" class="card-img-placeholder">
+                    <div class="card-content">
+                        <p class="card-category">Автобусный тур</p>
+                        <h3 class="card-title">Обзорная по Сочи (из Адлера)</h3>
+                        <div class="card-details">
+                            <span class="detail-item"><img src="images/1_3392.svg" alt="icon">6 часов</span>
+                            <span class="detail-item"><img src="images/1_3395.svg" alt="icon">618 ₽</span>
+                        </div>
+                        <p class="card-description">Приглашаем вас на экскурсию "Обзорная по Большому Сочи": Экскурсия начнется с подъёма на гору Большой Ахун - это высшая точка (665 метров) на побережьи Сочи...</p>
+                        <a href="#" class="btn card-btn">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <img src="images/1_3404.svg" alt="Slider arrows" class="slider-arrows">
+                <div class="slider-progress-bar">
+                    <div class="slider-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about-us" class="about-section">
+    <div class="container">
+        <div class="about-grid">
+            <!--merged image-->
+            <div class="about-image-stack">
+                <div class="image-bg-blue"></div>
+                <div class="image-placeholder"></div>
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">О нас</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="excursion-types">
+    <div class="container">
+        <div class="types-header">
+            <h2 class="section-title">Виды экскурсий</h2>
+            <p>Выбирайте на нашем сайте экскурсию, которая подходит именно вам и записывайтесь онлайн без очередей, просто и быстро!</p>
+        </div>
+        <div class="types-grid">
+            <div class="type-card">
+                <div class="type-card-img"></div>
+                <div class="type-card-label label-1">Автобусный тур</div>
+            </div>
+            <div class="type-card">
+                <div class="type-card-img"></div>
+                <div class="type-card-label label-2">Джиппинг</div>
+            </div>
+            <div class="type-card">
+                <div class="type-card-img"></div>
+                <div class="type-card-label label-2">Яхтинг</div>
+            </div>
+            <div class="type-card">
+                <div class="type-card-img"></div>
+                <div class="type-card-label label-2">Каньонинг</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="gallery">
+    <div class="container">
+        <div class="gallery-grid">
+            <div class="gallery-item item-1"></div>
+            <div class="gallery-item item-2"></div>
+            <div class="gallery-item item-3"></div>
+            <div class="gallery-item item-4"></div>
+            <div class="gallery-item item-5"></div>
+            <div class="gallery-item item-6"></div>
+            <div class="gallery-item item-7"></div>
+            <div class="gallery-item item-8"></div>
+        </div>
+    </div>
+</section>
+<section id="reviews">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Отзывы</h2>
+            <a href="#" class="link-arrow">Все отзывы</a>
+        </div>
+        <div class="reviews-slider">
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <!--merged image-->
+                    <div class="review-card-merged-image">
+                        <div class="review-card-bg"></div>
+                        <div class="review-avatar"></div>
+                    </div>
+                    <div class="review-content">
+                        <h3 class="review-author">Иван Иванов, 25 лет</h3>
+                        <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <!--merged image-->
+                    <div class="review-card-merged-image">
+                        <div class="review-card-bg"></div>
+                        <div class="review-avatar"></div>
+                    </div>
+                    <div class="review-content">
+                        <h3 class="review-author">Иван Иванов, 25 лет</h3>
+                        <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <img src="images/1_3295.svg" alt="Slider arrows" class="slider-arrows">
+                <div class="slider-progress-bar">
+                    <div class="slider-progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div class="contact-form-wrapper">
+            <h2 class="section-title">Остались вопросы?</h2>
+            <p>Оставь заявку и мы ответим</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Почта" required>
+                </div>
+                <button type="submit" class="btn">Оставить заявку</button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer id="footer" class="site-footer">
+    <div class="container footer-container">
+        <div class="footer-logo">
+            <img src="images/2362948918c64aa97762b2a3a082962b9f5603a2.png" alt="PeroTravel Logo">
+        </div>
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#hero">Главная</a></li>
+                <li><a href="#popular-excursions">Экскурсии</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+            </ul>
+        </nav>
+        <div class="footer-contacts">
+            <div class="contact-item">
+                <img src="images/1_3255.svg" alt="phone icon">
+                <span>+7 964 944 18 74</span>
+            </div>
+            <div class="contact-item">
+                <img src="images/1_3256.svg" alt="phone icon">
+                <span>+7 918 919 98 28</span>
+            </div>
+            <div class="contact-item">
+                <img src="images/1_3257.svg" alt="telegram icon">
+                <span>Телеграм-бот PeroTravel</span>
+            </div>
+        </div>
+        <div class="footer-social">
+             <div class="contact-item">
+                <img src="images/1_3260.svg" alt="email icon">
+                <a href="mailto:office@perotravel.ru">office@perotravel.ru</a>
+            </div>
+            <div class="social-icons">
+                 <img src="images/1_3243.svg" alt="social media icons">
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
