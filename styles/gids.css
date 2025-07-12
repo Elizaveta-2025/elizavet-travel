@@ -1,0 +1,92 @@
+/* CSS Раздел низа: Динасической подгрузки */
+.gids{ 
+  margin: 60px 0;
+}
+.gids__title{
+  margin: 0 0 20px 0;
+}
+.gids__card {
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.gids__img {
+  max-width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.gids__item {
+  max-width: calc(33.33% - 14px);
+  width: 100%;
+  transition: 0.3s ease;
+  overflow: hidden;
+  border-radius: 15px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.gids__item-content{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.gids__link {
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  background: none;
+  flex-grow: 1;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+  & span{
+    transition: all 0.2s ease-in-out;
+    color: #d52027;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: #d4d4d4;
+  }
+  &:hover span{
+      background-color: #d4d4d4b4;
+  }
+}
+@media (max-width: 992px) {
+  
+  .gids__item {
+  max-width: calc(50% - 10px);
+  width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .gids{
+    margin: 40px 0; 
+  }
+   .gids__item {
+  max-width: calc(50% - 4px);
+  width: 100%;
+  }
+  .gids__card {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    overflow: hidden;
+  }
+  .gids__test{
+    margin: 5px 0;
+  }
+  .gids__link{
+    margin: 10px 0;
+  }
+  }

@@ -1,0 +1,87 @@
+/* CSS for section section:info */
+.info-grid {
+  display: grid;
+  grid-template-columns: 550px 360px;
+  justify-content: space-between;
+  gap: 30px;
+}
+.documents-intro {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 40px;
+}
+.document-item {
+  display: flex;
+  gap: 45px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.doc-icon-wrapper {
+  position: relative;
+  width: 68px;
+  height: 68px;
+  flex-shrink: 0;
+}
+.doc-icon-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+}
+.doc-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 51px;
+  height: 51px;
+}
+.doc-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin: 0 0 10px;
+}
+.doc-description {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+.alerts-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.alert-box {
+  background-color: var(--background-grey);
+  border-radius: 10px;
+  padding: 25px;
+  position: relative;
+  overflow: hidden;
+}
+.alert-box p {
+  margin: 0;
+  font-weight: 500;
+  position: relative;
+  z-index: 1;
+  max-width: 275px;
+}
+.alert-symbol {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-display);
+  font-size: 96px;
+  color: var(--secondary-color);
+  opacity: 0.4;
+  line-height: 1;
+}
+@media (max-width: 992px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,136 @@
+/* CSS для раздела: hero */
+.hero-section {
+  position: relative;
+  height: 600px;
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+}
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.hero-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+.logo img {
+  width: 40px;
+  height: auto;
+}
+.main-nav ul {
+  display: flex;
+  gap: 20px;
+}
+.main-nav a {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+}
+.main-nav a.active {
+  color: var(--accent-color);
+}
+.header-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.header-socials a img {
+  width: 28px;
+  height: 28px;
+}
+.hero-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.hero-text {
+  max-width: 760px;
+}
+.main-title {
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.title-line-1 {
+  display: block;
+  font-size: 72px;
+  line-height: 1.2;
+}
+.title-line-2 {
+  display: block;
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.089);
+  -webkit-text-stroke: 2px var(--text-light);
+  text-shadow: 2px var(--text-light);
+  position: relative;
+}
+.title-connector {
+  font-family: 'mr_KindlyJasmineG', cursive;
+  font-size: 64px;
+  font-weight: 400;
+  color: var(--accent-color);
+  -webkit-text-stroke: 0;
+  position: absolute;
+  top: -30px;
+  left: 200px;
+  transform: rotate(-5deg);
+}
+.video-previews {
+  margin-top: auto;
+  padding-bottom: 20px;
+  transform: translateY(50%);
+}
+.video-previews-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+.video-card {
+  position: relative;
+  width: 360px;
+  height: 227px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.video-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.play-button-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 66px;
+  height: 66px;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  .hero-section { height: auto; padding-bottom: 150px; }
+  .main-nav { display: none; } /* Простое приложение для мобильных устройств, нужно только добавить меню */
+  .title-line-1 { font-size: 48px; }
+  .title-line-2 { font-size: 64px; }
+  .title-connector { font-size: 40px; top: -20px; left: 120px; }
+  .video-previews { transform: translateY(0); padding-top: 40px; }
+  .video-previews-container { justify-content: center; flex-wrap: wrap; }
+}

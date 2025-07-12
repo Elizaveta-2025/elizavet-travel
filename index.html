@@ -8,705 +8,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Elizavet Travel</title>
 <link href="styles/global.css" rel="stylesheet (Таблица стилей)">
-  <link rel="stylesheet" href="styles/global.css">
-  <style id="sections-styles">
-/* CSS для раздела: hero */
-.hero-section {
-  position: relative;
-  height: 600px;
-  color: var(--text-light);
-  display: flex;
-  flex-direction: column;
-}
-.hero-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-.hero-background img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 20px;
-}
-.logo img {
-  width: 40px;
-  height: auto;
-}
-.main-nav ul {
-  display: flex;
-  gap: 20px;
-}
-.main-nav a {
-  font-size: 14px;
-  font-weight: 500;
-  padding: 10px;
-}
-.main-nav a.active {
-  color: var(--accent-color);
-}
-.header-socials {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.header-socials a img {
-  width: 28px;
-  height: 28px;
-}
-.hero-content {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-}
-.hero-text {
-  max-width: 760px;
-}
-.main-title {
-  font-weight: 700;
-  margin-bottom: 40px;
-}
-.title-line-1 {
-  display: block;
-  font-size: 72px;
-  line-height: 1.2;
-}
-.title-line-2 {
-  display: block;
-  font-size: 96px;
-  font-weight: 900;
-  line-height: 1.2;
-  color: rgba(255, 255, 255, 0.089);
-  -webkit-text-stroke: 2px var(--text-light);
-  text-stroke: 2px var(--text-light);
-  position: relative;
-}
-.title-connector {
-  font-family: 'mr_KindlyJasmineG', cursive;
-  font-size: 64px;
-  font-weight: 400;
-  color: var(--accent-color);
-  -webkit-text-stroke: 0;
-  position: absolute;
-  top: -30px;
-  left: 200px;
-  transform: rotate(-5deg);
-}
-.video-previews {
-  margin-top: auto;
-  padding-bottom: 20px;
-  transform: translateY(50%);
-}
-.video-previews-container {
-  display: flex;
-  justify-content: flex-end;
-  gap: 16px;
-}
-.video-card {
-  position: relative;
-  width: 360px;
-  height: 227px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-.video-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.play-button-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 66px;
-  height: 66px;
-  cursor: pointer;
-}
-@media (max-width: 992px) {
-  .hero-section { height: auto; padding-bottom: 150px; }
-  .main-nav { display: none; } /* Простое приложение для мобильных устройств, нужно только добавить меню */
-  .title-line-1 { font-size: 48px; }
-  .title-line-2 { font-size: 64px; }
-  .title-connector { font-size: 40px; top: -20px; left: 120px; }
-  .video-previews { transform: translateY(0); padding-top: 40px; }
-  .video-previews-container { justify-content: center; flex-wrap: wrap; }
-}
-
-/* CSS Популярные экскурсии */
-.popular-excursions-section {
-  padding-top: 180px;
-  padding-bottom: 80px;
-}
-.excursions-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 20px;
-}
-.excursion-card {
-  position: relative;
-  height: 497px;
-  border-radius: 10px;
-  overflow: hidden;
-  color: var(--text-light);
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-.card-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -2;
-}
-.card-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, #000000 100%);
-  z-index: -1;
-}
-.card-content {
-  margin-top: auto;
-}
-.card-type {
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0 0 5px;
-}
-.card-title {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--accent-color);
-  margin: 0 0 10px;
-}
-.card-info {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 15px;
-  font-size: 12px;
-}
-.info-item {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-.card-description {
-  font-size: 12px;
-  line-height: 1.4;
-  margin: 0 0 20px;
-  height: 70px;
-  overflow: hidden;
-}
-.excursion-card .btn {
-  padding: 12px 24px;
-  font-size: 12px;
-  width: fit-content;
-}
-.slider-controls {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-top: 40px;
-  max-width: 100%;
-}
-.slider-track {
-  flex-grow: 1;
-  height: 2px;
-  background-color: #d4d4d4;
-  position: relative;
-}
-.slider-progress {
-  position: absolute;
-  height: 100%;
-  width: 15%;
-  background-color: var(--primary-color);
-}
-@media (max-width: 992px) {
-  .popular-excursions-section { padding-top: 80px; }
-}
-
-/* CSS раздел: about */
-.about-section {
-  position: relative;
-  min-height: 750px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 80px 0;
-}
-.about-bg-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 75%;
-  height: 100%;
-  z-index: 1;
-}
-.about-bg-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0 10px 10px 0;
-}
-.about-content-box {
-  position: relative;
-  z-index: 2;
-  background-color: var(--bg-light-gray);
-  padding: 40px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 542px;
-  margin-right: 10%;
-}
-.about-content-box .section-title {
-  margin-bottom: 20px;
-}
-.about-content-box p {
-  font-size: 14px;
-  line-height: 1.6;
-  margin: 0 0 1em;
-}
-@media (max-width: 992px) {
-  .about-section {
-    flex-direction: column;
-    padding: 40px 15px;
-    min-height: auto;
-  }
-  .about-bg-image {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    margin-bottom: -50px;
-  }
-  .about-bg-image img {
-    border-radius: 10px;
-  }
-  .about-content-box {
-    margin-right: 0;
-    width: calc(100% - 30px);
-    max-width: 100%;
-  }
-}
-
-/* CSS раздел Виды экскурсии : tour-types */
-.tour-types-section {
-  padding: 80px 0;
-}
-.tour-types-section .section-title {
-  margin-bottom: 40px;
-}
-.tour-types-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 30px 60px;
-  margin-bottom: 60px;
-}
-.tour-type-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-}
-.tour-type-item img {
-  width: 75px;
-  height: auto;
-  flex-shrink: 0;
-}
-.tour-type-item h3 {
-  color: var(--primary-color);
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-.tour-type-item p {
-  font-size: 14px;
-  line-height: 1.6;
-  margin: 0;
-}
-.tour-types-footer {
-  text-align: center;
-  max-width: 550px;
-  margin: 0 auto;
-}
-.tour-types-footer p {
-  margin-bottom: 30px;
-}
-@media (max-width: 992px) {
-  .tour-types-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* CSS раздел галереи: gallery */
-.gallery-section {
-  padding: 80px 0;
-}
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 130px;
-  grid-auto-flow: dense;
-  gap: 20px;
-  padding: 0 25px;
-}
-.gallery-item {
-  border-radius: 5px;
-  overflow: hidden;
-}
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.item-1 { grid-column: span 2; grid-row: span 2; }
-.item-2 { grid-column: span 1; grid-row: span 4; }
-.item-3 { grid-column: span 1; grid-row: span 2; }
-.item-4 { grid-column: span 1; grid-row: span 2; }
-.item-5 { grid-column: span 1; grid-row: span 2; }
-.item-6 { grid-column: span 1; grid-row: span 1; }
-.item-7 { grid-column: span 1; grid-row: span 1; }
-.item-8 { grid-column: span 2; grid-row: span 2; }
-
-@media (max-width: 992px) {
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 150px;
-  }
-  .item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8 {
-    grid-column: span 1;
-    grid-row: span 2;
-  }
-  .item-6, .item-7 { grid-row: span 1; }
-}
-@media (max-width: 768px) {
-  .gallery-grid {
-    grid-auto-rows: 200px;
-  }
-}
-
-/* CSS Раздел отзывы: testimonials */
-.testimonials-section {
-  padding: 80px 0;
-  background-color: #f8f8f8;
-}
-.testimonials-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 80px;
-}
-.testimonial-card {
-  display: flex;
-  gap: 30px;
-}
-.testimonial-photo {
-  width: 225px;
-  height: 245px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  overflow: hidden;
-}
-.testimonial-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.testimonial-content {
-  background-color: var(--bg-light-gray);
-  border-radius: 10px;
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  flex-grow: 1;
-}
-.quote-mark {
-  position: absolute;
-  font-family: 'Marko One', serif;
-  font-size: 300px;
-  line-height: 1;
-  color: var(--accent-color);
-  opacity: 0.4;
-  right: -30px;
-  bottom: -90px;
-  z-index: 1;
-  transform: rotate(18deg);
-}
-.testimonial-content h3 {
-  font-size: 14px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  position: relative;
-  z-index: 2;
-}
-.testimonial-content p {
-  font-size: 14px;
-  line-height: 1.6;
-  margin: 0;
-  position: relative;
-  z-index: 2;
-}
-@media (max-width: 1200px) {
-  .testimonials-wrapper { gap: 40px; }
-}
-@media (max-width: 992px) {
-  .testimonials-wrapper { grid-template-columns: 1fr; }
-}
-@media (max-width: 768px) {
-  .testimonial-card { flex-direction: column; align-items: center; }
-  .testimonial-photo { width: 100%; height: 250px; }
-}
-
-/* CSS Раздел контакты: contact */
-.contact-section {
-  position: relative;
-  min-height: 640px;
-  display: flex;
-  align-items: center;
-}
-.contact-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-.contact-bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.contact-form-wrapper {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 25px;
-  display: flex;
-  justify-content: flex-end;
-}
-.contact-form-box {
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(2px);
-  border-radius: 10px;
-  padding: 60px;
-  width: 100%;
-  max-width: 480px;
-  color: var(--text-light);
-}
-.contact-form-box h2 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-.contact-form-box p {
-  color: var(--accent-color);
-  font-size: 14px;
-  font-weight: 500;
-  margin: 0 0 40px;
-}
-.form-group {
-  margin-bottom: 30px;
-}
-.form-group label {
-  display: block;
-  font-size: 12px;
-  font-weight: 500;
-  margin-bottom: 15px;
-}
-.form-group input {
-  width: 100%;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid var(--text-light);
-  color: var(--text-light);
-  padding: 5px 0;
-  font-size: 14px;
-}
-.form-group input:focus {
-  outline: none;
-  border-bottom-color: var(--accent-color);
-}
-.contact-form-box .btn {
-  width: 100%;
-  margin-top: 20px;
-}
-@media (max-width: 768px) {
-  .contact-form-wrapper { justify-content: center; }
-  .contact-form-box { padding: 40px 20px; }
-}
-/* CSS Раздел низа: Динасической подгрузки */
-.treners{ 
-  margin: 60px 0;
-}
-.treners__title{
-  margin: 0 0 20px 0;
-}
-.treners__card {
-  
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  overflow: hidden;
-}
-
-.treners__img {
-  max-width: 100%;
-  aspect-ratio: 4/5;
-  object-fit: cover;
-  width: 100%;
-  border-radius: 15px;
-}
-
-.treners__item {
-  max-width: calc(33.33% - 14px);
-  width: 100%;
-  transition: 0.3s ease;
-  overflow: hidden;
-  border-radius: 15px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-.treners__item-content{
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.treners__link {
-  border: none;
-  margin-top: 20px;
-  cursor: pointer;
-  background: none;
-  flex-grow: 1;
-  width: max-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 0;
-  & span{
-    transition: all 0.2s ease-in-out;
-    color: #d52027;
-    padding: 5px 10px;
-    border-radius: 6px;
-    background-color: #d4d4d4;
-  }
-  &:hover span{
-      background-color: #d4d4d4b4;
-  }
-}
-@media (max-width: 992px) {
-  
-  .treners__item {
-  max-width: calc(50% - 10px);
-  width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .treners{
-    margin: 40px 0; 
-  }
-   .treners__item {
-  max-width: calc(50% - 4px);
-  width: 100%;
-  }
-  .treners__card {
-    
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    overflow: hidden;
-  }
-  .treners__test{
-    margin: 5px 0;
-  }
-  .treners__link{
-    margin: 10px 0;
-  }
-  }
-
-
-/* CSS Раздел низа: footer */
-.site-footer {
-  background-color: var(--bg-light-gray);
-  padding: 40px 0;
-  font-size: 14px;
-  font-weight: 500;
-}
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.footer-col {
-  flex: 1;
-  min-width: 180px;
-}
-.footer-logo-col {
-  flex-basis: 80px;
-  flex-grow: 0;
-}
-.footer-logo img {
-  width: 80px;
-  height: auto;
-}
-.footer-col h4 {
-  font-size: 14px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.footer-col ul li {
-  margin-bottom: 15px;
-}
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.contact-item img {
-  width: 20px;
-  height: 20px;
-}
-.footer-socials {
-  display: flex;
-  gap: 15px;
-}
-.footer-socials img {
-  width: 30px;
-  height: 30px;
-}
-@media (max-width: 992px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .contact-item, .footer-socials {
-    justify-content: center;
-  }
-}
-  </style>
+<link rel="stylesheet" href="styles/global.css">
+<link rel="stylesheet" href="styles/gids.css">
+<link rel="stylesheet" href="styles/hero-section.css">
+<link rel="stylesheet" href="styles/popular-excursions-section.css">
+<link rel="stylesheet" href="styles/about-section.css">
+<link rel="stylesheet" href="styles/contact-section.css">
+<link rel="stylesheet" href="styles/gallery-section.css">
+<link rel="stylesheet" href="styles/site-footer.css">
+<link rel="stylesheet" href="styles/tour-types-section.css">
+<link rel="stylesheet" href="styles/video-previews.css">
+<link rel="stylesheet" href="styles/global-excursions.css">
+<link rel="stylesheet" href="styles/testimonials-section.css">
+ 
   <script src="scripts/script.js" ></script> 
 </head>
 <body>
@@ -722,7 +36,7 @@
       <nav class="main-nav">
         <ul>
           <li><a href="#" class="active">Главная</a></li>
-          <li><a href="#popular-excursions">Экскурсии</a></li>
+          <li><a href="excursions.html">Экскурсии</a></li>
           <li><a href="#">Личный кабинет</a></li>
         </ul>
       </nav>
@@ -748,7 +62,7 @@
         <!--merged image-->
         <div class="play-button-wrapper">
           <img src="images/1_3209.svg" alt="Play button outer circle" style="position: absolute; top: 0; left: 0;">
-          <img src="images/1_3210.svg" alt="Play button icon" style="position: absolute; top: 15px; left: 15px;">
+          <img src="images/play.png" alt="Play button icon" style="position: absolute; top: 15px; left: 15px;">
         </div>
       </div>
       <div class="video-card">
@@ -781,7 +95,7 @@
             </div>
           </div>
           <p class="card-description">Приглашаем вас на экскурсию "Обзорная по Большому Сочи": Экскурсия начнется с подъёма на гору Большой Ахун...</p>
-          <a href="#" class="btn">Подробнее</a>
+          <a href="excursions.html" class="btn">Подробнее</a>
         </div>
       </article>
       <article class="excursion-card">
@@ -961,72 +275,72 @@
     </div>
   </div>
 </section>
-<section class="treners">
+<section class="gids">
   <div class="container">
-    <h2 class="treners__title">
-      Пролфессиональные тренеры
+    <h2 class="gids__title">
+      Профессиональные гиды
     </h2>
-        <ul class="treners__card">
-            <li class="treners__item">
-                <img src="images/0a9ccc680785ec6a22d0af4645956057c785a77d.png" alt="Тренер 1" class="treners__img">
-                <div class="treners__item-content">
-                  <h3 class="treners__subtitle">Тренер 1</h3>
-                  <p class="treners__test">Преподаватель по робототехнике</p>
-                  <a href="#hero" class="treners__link" type="button">
+        <ul class="gids__card">
+            <li class="gids__item">
+                <img src="images/gid1.jpeg" alt="Гид 1" class="gids__img">
+                <div class="gids__item-content">
+                  <h3 class="gids__subtitle">Гид 1</h3>
+                  <p class="gids__test">Историк</p>
+                  <a href="#hero" class="gids__link" type="button">
                     <span>Подробнее</span>
                   </a>    
                 </div>
                 
             </li>
-            <li class="treners__item">
-                <img src="images/72a94ca2ac0828d6438b37174c54c9ce73763cc1.png" alt="Тренер 2" class="treners__img">
-                <div class="treners__item-content">
-                  <h3 class="treners__subtitle">Тренер 2</h3>
-                  <p class="treners__test">Преподаватель по робототехнике</p>
-                  <a href="#hero" class="treners__link" type="button">
+            <li class="gids__item">
+                <img src="images/72a94ca2ac0828d6438b37174c54c9ce73763cc1.png" alt="Гид 2" class="gids__img">
+                <div class="gids__item-content">
+                  <h3 class="gids__subtitle">Гид 2</h3>
+                  <p class="gids__test">Историк</p>
+                  <a href="#hero" class="gids__link" type="button">
                     <span>Подробнее</span>
                   </a> 
                 </div>
             
             </li>
-            <li class="treners__item">
-                <img src="images/d1a4f7a7e0d337c8a5dc24d80a81a94ea627bfef.png" alt="Тренер 3" class="treners__img">
-                <div class="treners__item-content">
-                  <h3 class="treners__subtitle">Тренер 3</h3>
-                  <p class="treners__test">Преподаватель по робототехнике.</p>
-                   <a href="#hero" class="treners__link" type="button">
+            <li class="gids__item">
+                <img src="images/d1a4f7a7e0d337c8a5dc24d80a81a94ea627bfef.png" alt="Гид 3" class="gids__img">
+                <div class="gids__item-content">
+                  <h3 class="gids__subtitle">Гид 3</h3>
+                  <p class="gids__test">Историк.</p>
+                   <a href="#hero" class="gids__link" type="button">
                     <span>Подробнее</span>
                   </a> 
                 </div>
 
             </li>
-            <li class="treners__item">
-                <img src="images/69449b915c87a4d60e7704438747f3ceff84de49.png" alt="Тренер 4" class="treners__img">
-                <div class="treners__item-content">
-                  <h3 class="treners__subtitle">Тренер 4</h3>
-                  <p class="treners__test">Преподаватель по робототехнике</p>
-                  <a href="#hero" class="treners__link" type="button">
+            <li class="gids__item">
+                <img src="images/69449b915c87a4d60e7704438747f3ceff84de49.png" alt="Гид 4" class="gids__img">
+                <div class="gids__item-content">
+                  <h3 class="gids__subtitle">Гид 4</h3>
+                  <p class="gids__test">Историк</p>
+                  <a href="#hero" class="gids__link" type="button">
                     <span>Подробнее</span>
                   </a> 
                 </div>
 
             </li>
-            <li class="treners__item">
-                <img src="images/0b9853f09fbdf3aba96fb4f0dc9748d3a43032a8.png" alt="Тренер 5" class="treners__img">
-                <div class="treners__item-content">
-                  <h3 class="treners__subtitle">Тренер 5</h3>
-                  <p class="treners__test">Преподаватель по робототехнике</p>
-                  <a href="#hero" class="treners__link" type="button">
+            <li class="gids__item">
+                <img src="images/0b9853f09fbdf3aba96fb4f0dc9748d3a43032a8.png" alt="Гид 5" class="gids__img">
+                <div class="gids__item-content">
+                  <h3 class="gids__subtitle">Гид 5</h3>
+                  <p class="gids__test">Историк</p>
+                  <a href="#hero" class="gids__link" type="button">
                     <span>Подробнее</span>
                   </a> 
                 </div>
             </li>
-               <li class="treners__item">
-                <img src="images/6d4524c42416c42adb5ace9a6972db5710062560.png" alt="Тренер 5" class="treners__img">
-                <div class="treners__item-content">
-                  <h3 class="treners__subtitle">Тренер 6</h3>
-                  <p class="treners__test">Преподаватель по робототехнике</p>
-                  <a href="#hero" class="treners__link" type="button">
+               <li class="gids__item">
+                <img src="images/6d4524c42416c42adb5ace9a6972db5710062560.png" alt="Гид 5" class="gids__img">
+                <div class="gids__item-content">
+                  <h3 class="gids__subtitle">Гид 6</h3>
+                  <p class="gids__test">Историк</p>
+                  <a href="#hero" class="gids__link" type="button">
                     <span>Подробнее</span>
                   </a> 
                 </div>
@@ -1073,7 +387,7 @@
       <h4>Меню</h4>
       <ul>
         <li><a href="#">Главная</a></li>
-        <li><a href="#popular-excursions">Экскурсии</a></li>
+        <li><a href="excursions.html">Экскурсии</a></li>
         <li><a href="#">Личный кабинет</a></li>
       </ul>
     </div>

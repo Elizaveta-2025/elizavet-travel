@@ -1,0 +1,97 @@
+/* CSS Популярные экскурсии */
+.popular-excursions-section {
+  padding-top: 180px;
+  padding-bottom: 80px;
+}
+.excursions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
+}
+.excursion-card {
+  position: relative;
+  height: 497px;
+  border-radius: 10px;
+  overflow: hidden;
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, #000000 100%);
+  z-index: -1;
+}
+.card-content {
+  margin-top: auto;
+}
+.card-type {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 5px;
+}
+.card-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin: 0 0 10px;
+}
+.card-info {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.card-description {
+  font-size: 12px;
+  line-height: 1.4;
+  margin: 0 0 20px;
+  height: 70px;
+  overflow: hidden;
+}
+.excursion-card .btn {
+  padding: 12px 24px;
+  font-size: 12px;
+  width: fit-content;
+}
+.slider-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+  max-width: 100%;
+}
+.slider-track {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #d4d4d4;
+  position: relative;
+}
+.slider-progress {
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  background-color: var(--primary-color);
+}
+@media (max-width: 992px) {
+  .popular-excursions-section { padding-top: 80px; }
+}

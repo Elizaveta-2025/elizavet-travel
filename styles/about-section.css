@@ -1,0 +1,62 @@
+/* CSS раздел: about */
+.about-section {
+  position: relative;
+  min-height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 80px 0;
+}
+.about-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 100%;
+  z-index: 1;
+}
+.about-bg-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 10px 10px 0;
+}
+.about-content-box {
+  position: relative;
+  z-index: 2;
+  background-color: var(--bg-light-gray);
+  padding: 40px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 542px;
+  margin-right: 10%;
+}
+.about-content-box .section-title {
+  margin-bottom: 20px;
+}
+.about-content-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 1em;
+}
+@media (max-width: 992px) {
+  .about-section {
+    flex-direction: column;
+    padding: 40px 15px;
+    min-height: auto;
+  }
+  .about-bg-image {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: -50px;
+  }
+  .about-bg-image img {
+    border-radius: 10px;
+  }
+  .about-content-box {
+    margin-right: 0;
+    width: calc(100% - 30px);
+    max-width: 100%;
+  }
+}

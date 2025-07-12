@@ -1,0 +1,17 @@
+/* CSS for section section:expenses */
+.expenses-cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.info-card .lunch {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+@media (max-width: 1200px) {
+    .expenses-cards-container {
+        justify-content: center;
+    }
+}

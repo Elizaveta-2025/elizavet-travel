@@ -1,0 +1,96 @@
+/* CSS for section section:calendar */
+#calendar {
+  background-color: var(--background-light);
+}
+.calendar-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+.calendar-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px 10px 10px 0px;
+  object-fit: cover;
+  max-height: 550px;
+}
+.calendar-content .section-title {
+  text-align: right;
+}
+.calendar-widget-container {
+  background-color: var(--background-grey);
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 560px;
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.nav-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+.nav-arrow img {
+    width: 9px;
+    height: 16px;
+}
+.month-year {
+  text-align: center;
+}
+.month-year .month {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-right: 10px;
+}
+.month-year .year {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+.weekday {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+.day {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px;
+  min-height: 44px;
+}
+.day.available {
+  cursor: pointer;
+}
+.day .time-slot {
+  display: block;
+  font-size: 10px;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+.day.other-month {
+  color: #d4d4d4;
+}
+@media (max-width: 992px) {
+  .calendar-layout {
+    grid-template-columns: 1fr;
+  }
+  .calendar-image {
+    display: none;
+  }
+  .calendar-content .section-title {
+    text-align: left;
+  }
+}

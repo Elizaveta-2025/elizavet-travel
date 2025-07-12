@@ -41,11 +41,11 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 
     //Задание 3,4 динамическая подгрузка
-    const trenersContainer = document.querySelector(".treners");
+    const gidsContainer = document.querySelector(".gids");
 
-    if (trenersContainer) {
-        // Создаем массив dataTitleTreners с новыми именами
-        const dataTitleTreners = [
+    if (gidsContainer) {
+        // Создаем массив dataTitleGids с новыми именами
+        const dataTitleGids = [
             "Ирина Лайм",
             "Марина Орлова",
             "Максим Петров",
@@ -54,11 +54,11 @@ window.addEventListener("DOMContentLoaded", () => {
             "Валентин Сидоров",
         ];
 
-        const titleTreners = trenersContainer.querySelectorAll(".treners__subtitle");
+        const titleGids = gidsContainer.querySelectorAll(".gids__subtitle");
 
-        titleTreners.forEach((item, index) => {
+        titleGids.forEach((item, index) => {
             console.log(item);
-            item.textContent = dataTitleTreners[index];
+            item.textContent = dataTitleGids[index];
         });
     }
     
