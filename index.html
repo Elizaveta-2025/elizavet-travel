@@ -552,6 +552,99 @@
   .contact-form-wrapper { justify-content: center; }
   .contact-form-box { padding: 40px 20px; }
 }
+/* CSS Раздел низа: Динасической подгрузки */
+.treners{ 
+  margin: 60px 0;
+}
+.treners__title{
+  margin: 0 0 20px 0;
+}
+.treners__card {
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.treners__img {
+  max-width: 100%;
+  aspect-ratio: 4/5;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.treners__item {
+  max-width: calc(33.33% - 14px);
+  width: 100%;
+  transition: 0.3s ease;
+  overflow: hidden;
+  border-radius: 15px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.treners__item-content{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.treners__link {
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  background: none;
+  flex-grow: 1;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+  & span{
+    transition: all 0.2s ease-in-out;
+    color: #d52027;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: #d4d4d4;
+  }
+  &:hover span{
+      background-color: #d4d4d4b4;
+  }
+}
+@media (max-width: 992px) {
+  
+  .treners__item {
+  max-width: calc(50% - 10px);
+  width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .treners{
+    margin: 40px 0; 
+  }
+   .treners__item {
+  max-width: calc(50% - 4px);
+  width: 100%;
+  }
+  .treners__card {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    overflow: hidden;
+  }
+  .treners__test{
+    margin: 5px 0;
+  }
+  .treners__link{
+    margin: 10px 0;
+  }
+  }
+
 
 /* CSS Раздел низа: footer */
 .site-footer {
@@ -614,7 +707,7 @@
   }
 }
   </style>
-  <script src="scripts/scripts.js" ></script> 
+  <script src="scripts/script.js" ></script> 
 </head>
 <body>
 <section id="hero" class="hero-section">
@@ -633,11 +726,7 @@
           <li><a href="#">Личный кабинет</a></li>
         </ul>
       </nav>
-      <div class="header-socials">
-        <a href="#"><img src="images/1_3222.svg" alt="Facebook"></a>
-        <a href="#"><img src="images/1_3217.svg" alt="Instagram"></a>
-        <a href="#"><img src="images/1_3214.svg" alt="VK"></a>
-      </div>
+     
     </header>
     <div class="hero-content">
       <div class="hero-text">
@@ -663,7 +752,7 @@
         </div>
       </div>
       <div class="video-card">
-        <img src="images/0b9853f09fbdf3aba96fb4f0dc9748d3a43032a8.png" alt="Video preview 2">
+        <img src="images/most.png" alt="Video preview 2">
       </div>
     </div>
   </div>
@@ -872,6 +961,80 @@
     </div>
   </div>
 </section>
+<section class="treners">
+  <div class="container">
+    <h2 class="treners__title">
+      Пролфессиональные тренеры
+    </h2>
+        <ul class="treners__card">
+            <li class="treners__item">
+                <img src="images/0a9ccc680785ec6a22d0af4645956057c785a77d.png" alt="Тренер 1" class="treners__img">
+                <div class="treners__item-content">
+                  <h3 class="treners__subtitle">Тренер 1</h3>
+                  <p class="treners__test">Преподаватель по робототехнике</p>
+                  <a href="#hero" class="treners__link" type="button">
+                    <span>Подробнее</span>
+                  </a>    
+                </div>
+                
+            </li>
+            <li class="treners__item">
+                <img src="images/72a94ca2ac0828d6438b37174c54c9ce73763cc1.png" alt="Тренер 2" class="treners__img">
+                <div class="treners__item-content">
+                  <h3 class="treners__subtitle">Тренер 2</h3>
+                  <p class="treners__test">Преподаватель по робототехнике</p>
+                  <a href="#hero" class="treners__link" type="button">
+                    <span>Подробнее</span>
+                  </a> 
+                </div>
+            
+            </li>
+            <li class="treners__item">
+                <img src="images/d1a4f7a7e0d337c8a5dc24d80a81a94ea627bfef.png" alt="Тренер 3" class="treners__img">
+                <div class="treners__item-content">
+                  <h3 class="treners__subtitle">Тренер 3</h3>
+                  <p class="treners__test">Преподаватель по робототехнике.</p>
+                   <a href="#hero" class="treners__link" type="button">
+                    <span>Подробнее</span>
+                  </a> 
+                </div>
+
+            </li>
+            <li class="treners__item">
+                <img src="images/69449b915c87a4d60e7704438747f3ceff84de49.png" alt="Тренер 4" class="treners__img">
+                <div class="treners__item-content">
+                  <h3 class="treners__subtitle">Тренер 4</h3>
+                  <p class="treners__test">Преподаватель по робототехнике</p>
+                  <a href="#hero" class="treners__link" type="button">
+                    <span>Подробнее</span>
+                  </a> 
+                </div>
+
+            </li>
+            <li class="treners__item">
+                <img src="images/0b9853f09fbdf3aba96fb4f0dc9748d3a43032a8.png" alt="Тренер 5" class="treners__img">
+                <div class="treners__item-content">
+                  <h3 class="treners__subtitle">Тренер 5</h3>
+                  <p class="treners__test">Преподаватель по робототехнике</p>
+                  <a href="#hero" class="treners__link" type="button">
+                    <span>Подробнее</span>
+                  </a> 
+                </div>
+            </li>
+               <li class="treners__item">
+                <img src="images/6d4524c42416c42adb5ace9a6972db5710062560.png" alt="Тренер 5" class="treners__img">
+                <div class="treners__item-content">
+                  <h3 class="treners__subtitle">Тренер 6</h3>
+                  <p class="treners__test">Преподаватель по робототехнике</p>
+                  <a href="#hero" class="treners__link" type="button">
+                    <span>Подробнее</span>
+                  </a> 
+                </div>
+            </li>
+      </ul>
+  </div>
+       
+</section>
 <section id="contact" class="contact-section">
   <div class="contact-bg">
     <img src="images/d7b463437c59f0eb3d59497e76861bf3a363da36.png" alt="Человек в плаще в густом зелёном лесу">
@@ -898,6 +1061,7 @@
     </div>
   </div>
 </section>
+
 <footer id="footer" class="site-footer">
   <div class="container footer-container">
     <div class="footer-col footer-logo-col">
@@ -917,15 +1081,15 @@
       <h4>Контакты</h4>
       <ul>
         <li class="contact-item">
-          <img src="images/1_2995.svg" alt="WhatsApp">
+          <img src="images/1_869.svg" alt="WhatsApp">
           <span>+7 964 123 11 00</span>
         </li>
         <li class="contact-item">
-          <img src="images/1_2989.svg" alt="Telegram">
+          <img src="images/1_864.png" alt="Telegram">
           <span>+7 918 154 11 44</span>
         </li>
         <li class="contact-item">
-          <img src="images/1_2983.svg" alt="Telegram Bot">
+          <img src="images/1_864.svg" alt="Telegram Bot">
           <span>Телеграм-бот Elizavet_Travel</span>
         </li>
       </ul>
@@ -934,7 +1098,7 @@
       <h4>E-Mail</h4>
       <ul>
         <li class="contact-item">
-          <img src="images/1_2977.svg" alt="Email">
+          <img src="images/1_850.svg" alt="Email">
           <span>office@Elizavet_travel.ru</span>
         </li>
       </ul>
@@ -942,10 +1106,11 @@
     <div class="footer-col footer-socials-col">
       <h4>Соц. сети</h4>
       <div class="footer-socials">
-        <a href="#"><img src="images/1_2972.svg" alt="VK"></a>
+        <a href="#"><img src="images/1_846.svg" alt="VK"></a>
       </div>
     </div>
   </div>
 </footer>
-</body>
+<script src="scripts/script.js" defer></script>
+</body >
 </html>
