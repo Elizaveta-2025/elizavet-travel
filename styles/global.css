@@ -15,6 +15,10 @@
   --text-light: #ffffff;
   --bg-light-gray: #ededed;
 }
+html{
+  scroll-behavior: smooth;
+
+}
 
 body {
   margin: 0;

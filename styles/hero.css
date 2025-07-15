@@ -43,10 +43,16 @@
   font-weight: 500;
   padding: 10px;
 }
-.main-nav a.active {
-  color: var(--accent-color);
+.header__list li{
+  transition: all 0.2s ease-in-out;
 }
 
+.header__list li:first-child a{
+  color: var(--accent-color);
+}
+.header__list li:hover{
+  opacity: 0.6;
+}
 .header-socials {
   display: flex;
   flex-direction: column;

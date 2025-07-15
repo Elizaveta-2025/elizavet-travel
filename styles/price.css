@@ -1,0 +1,104 @@
+/* Задание 3,5 динамическая подгрузка */
+  .price{
+    margin: 60px auto;
+  }
+  .price__list {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.price__item {
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(20, 16, 36, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    max-width: calc(33.33% - 14px);
+    width: 100%;
+    transition: transform 0.3s ease-out;
+    gap: 20px;
+    aspect-ratio: 6/8;
+    & p{
+      margin: 0;
+      padding: 0;
+    }
+}
+.price__item:last-child{
+  background-color: rgb(27, 21, 46);
+  color: white;
+  transform: scale(1.05);
+}
+
+
+
+.price__level {
+    font-weight: 600;
+    font-size: 30px;
+    flex-grow: 1;
+}
+
+.price__price {
+    font-weight: 600;
+    font-size: 50px;
+    flex-grow: 1;
+    transform: translateY(20px);
+}
+
+.price__description {
+   font-weight: 600;
+}
+
+.price__button {
+    margin-top: 20px;
+    cursor: pointer;
+    flex-grow: 1;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+.price__button span{
+  padding: 25px;
+  border-radius: 5px;
+  background-color: rgb(255, 27, 27);
+  color: white;
+  display: flex;
+  transition: all 0.2s ease-in-out;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  cursor: pointer;
+  &:hover{
+  background-color: rgba(255, 27, 27, 0.8);
+
+}
+}
+@media (max-width: 992px) {
+  .price__item{
+    max-width: calc(50% - 10px);
+  }
+  .price__item:last-child{
+    transform: scale(1);
+  }
+}
+@media (max-width: 768px) {
+  .price__item{
+    max-width: 100%;
+    aspect-ratio: 5/5;
+  }
+  .price__item:last-child{
+    transform: scale(1);
+  }
+  .price__button{
+    margin: 0;
+  }
+}

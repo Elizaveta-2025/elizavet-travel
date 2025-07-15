@@ -7,22 +7,21 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Elizavet Travel</title>
+
 <link href="styles/global.css" rel="stylesheet (Таблица стилей)">
-<link rel="stylesheet" href="styles/global.css">
-<link rel="stylesheet" href="styles/gids.css">
-<link rel="stylesheet" href="styles/hero-section.css">
-<link rel="stylesheet" href="styles/popular-excursions-section.css">
-<link rel="stylesheet" href="styles/about-section.css">
-<link rel="stylesheet" href="styles/contact-section.css">
-<link rel="stylesheet" href="styles/gallery-section.css">
-<link rel="stylesheet" href="styles/site-footer.css">
-<link rel="stylesheet" href="styles/tour-types-section.css">
-<link rel="stylesheet" href="styles/video-previews.css">
-<link rel="stylesheet" href="styles/global-excursions.css">
-<link rel="stylesheet" href="styles/testimonials-section.css">
-<link rel="stylesheet" href="styles/price_list.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
+  <link rel="stylesheet" href="styles/hero.css">
+  <link rel="stylesheet" href="styles/popular-excursions-section.css">
+  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/tour-types.css">
+  <link rel="stylesheet" href="styles/gallery.css">
+  <link rel="stylesheet" href="styles/testimonials.css">
+  <link rel="stylesheet" href="styles/gids.css">
+  <link rel="stylesheet" href="styles/price.css">
+  <link rel="stylesheet" href="styles/footer.css">
  
-  <script src="scripts/script.js" ></script> 
+
 </head>
 <body>
 <section id="hero" class="hero-section">
@@ -35,10 +34,10 @@
         <img src="images/logo.png" alt="Elizavet Travel Logo">
       </a>
       <nav class="main-nav">
-        <ul class="header_list">
-          <li><a href="#" class="active">Главная</a></li>
-          <li><a href="excursions.html">Экскурсии</a></li>
-          <li><a href="#">Личный кабинет</a></li>
+        <ul class="header__list">
+          <!-- <li><a href="#" class="active">Главная</a></li>
+          <li><a href="#popular-excursions">Экскурсии</a></li>
+          <li><a href="#">Личный кабинет</a></li> -->
         </ul>
       </nav>
      
@@ -63,11 +62,11 @@
         <!--merged image-->
         <div class="play-button-wrapper">
           <img src="images/1_3209.svg" alt="Play button outer circle" style="position: absolute; top: 0; left: 0;">
-          <img src="images/play.png" alt="Play button icon" style="position: absolute; top: 15px; left: 15px;">
+          <img src="images/1_3210.svg" alt="Play button icon" style="position: absolute; top: 15px; left: 15px;">
         </div>
       </div>
       <div class="video-card">
-        <img src="images/most.png" alt="Video preview 2">
+        <img src="images/0b9853f09fbdf3aba96fb4f0dc9748d3a43032a8.png" alt="Video preview 2">
       </div>
     </div>
   </div>
@@ -96,7 +95,7 @@
             </div>
           </div>
           <p class="card-description">Приглашаем вас на экскурсию "Обзорная по Большому Сочи": Экскурсия начнется с подъёма на гору Большой Ахун...</p>
-          <a href="excursions.html" class="btn">Подробнее</a>
+          <a href="#" class="btn">Подробнее</a>
         </div>
       </article>
       <article class="excursion-card">
@@ -276,16 +275,14 @@
     </div>
   </div>
 </section>
-
-
 <section class="gids">
   <div class="container">
     <h2 class="gids__title">
-      Профессиональные гиды
+      Профессиональные Гиды
     </h2>
         <ul class="gids__card">
             <li class="gids__item">
-                <img src="images/gid1.jpeg" alt="Гид 1" class="gids__img">
+                <img src="images/gid1.png" alt="Гид 1" class="gids__img">
                 <div class="gids__item-content">
                   <h3 class="gids__subtitle">Гид 1</h3>
                   <p class="gids__test">Историк</p>
@@ -320,7 +317,7 @@
             <li class="gids__item">
                 <img src="images/69449b915c87a4d60e7704438747f3ceff84de49.png" alt="Гид 4" class="gids__img">
                 <div class="gids__item-content">
-                  <h3 class="gids__subtitle">Гид 4</h3>
+                  <h3 class="gids__subtitle">Тренер 4</h3>
                   <p class="gids__test">Историк</p>
                   <a href="#hero" class="gids__link" type="button">
                     <span>Подробнее</span>
@@ -349,13 +346,23 @@
                 </div>
             </li>
       </ul>
-  </div>      
+  </div>
+       
 </section>
-
-
+<section class="price container">
+      <h2 class="price__title">Выбирите нужный тариф</h2>
+      <ul class="price__list">
+          <!--
+          Статические карточки закомментированы, чтобы создать их динамически через JS
+          <li class="price__item">
+              <p class="price__level">– PRO –</p>
+              <p class="price__price">12 000 ₽</p>
+              <p class="price__description">УМК по робототехнике и программированию</p>
+              <button class="price__button">Оставить заявку</button>
+          </li>
+          -->
+      </ul>
 </section>
-
-
 <section id="contact" class="contact-section">
   <div class="contact-bg">
     <img src="images/d7b463437c59f0eb3d59497e76861bf3a363da36.png" alt="Человек в плаще в густом зелёном лесу">
@@ -394,7 +401,7 @@
       <h4>Меню</h4>
       <ul>
         <li><a href="#">Главная</a></li>
-        <li><a href="excursions.html">Экскурсии</a></li>
+        <li><a href="#popular-excursions">Экскурсии</a></li>
         <li><a href="#">Личный кабинет</a></li>
       </ul>
     </div>
@@ -433,5 +440,6 @@
   </div>
 </footer>
 <script src="scripts/script.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body >
 </html>
