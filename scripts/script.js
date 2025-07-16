@@ -30,7 +30,6 @@ if (headerMenu) {
 }
 
 
-
     const favoriteBlock = document.querySelector('.hero-actions');
 
     if (favoriteBlock) {
@@ -59,12 +58,12 @@ if (headerMenu) {
         });
     }
 
-    //Задание 3,4 динамическая подгрузка
-    const trenersContainer = document.querySelector(".treners");
+     //Задание 3,4 динамическая подгрузка
+    const gidsContainer = document.querySelector(".gids");
 
-    if (trenersContainer) {
-        // Создаем массив dataTitleTreners с новыми именами
-        const dataTitleTreners = [
+    if (gidsContainer) {
+        // Создаем массив dataTitleGids с новыми именами
+        const dataTitleGids = [
             "Ирина Лайм",
             "Марина Орлова",
             "Максим Петров",
@@ -73,20 +72,20 @@ if (headerMenu) {
             "Валентин Сидоров",
         ];
 
-        const titleTreners = trenersContainer.querySelectorAll(".treners__subtitle");
+        const titleGids = gidsContainer.querySelectorAll(".gids__subtitle");
 
-        titleTreners.forEach((item, index) => {
+        titleGids.forEach((item, index) => {
             console.log(item);
-            item.textContent = dataTitleTreners[index];
+            item.textContent = dataTitleGids[index];
         });
     }
   
-    //Задание 3,5 динамическая подгрузка
+    //Задание 3.5 динамическая подгрузка
+  /*  
     const cardsPrice = document.querySelector('.price');
 
     if (cardsPrice) {
         const priceList = cardsPrice.querySelector('.price__list');
-
         const cardsPriceData = {
             price1: {
                 level: '– Социальный –',
@@ -116,7 +115,7 @@ if (headerMenu) {
                     <p class="price__description">${description}</p>
                     <button class="price__button">
                     <span>${button}</span> 
-                    </button>
+                   
                 </li>
             `;
             return card;
@@ -124,10 +123,63 @@ if (headerMenu) {
 
         for (const key in cardsPriceData) {
             const card = cardsPriceData[key];
-            const cardElement = createCard(card.level, card.price, card.description, card.button);
+            const cardElement = createCard( card.level, card.price, card.description, card.button);
             priceList.insertAdjacentHTML('beforeend', cardElement);
         }
-    }
+    }  
+*/
+    //Задание 3.6
+    const cardsPrice = document.querySelector('.price');
 
+    if (cardsPrice) {
+        const priceList = cardsPrice.querySelector('.price__list');
+
+ // Пример URL для получения данных с сервера
+        const apiUrl = "data.json";
+
+ // Функция для создания карточки
+       const createCard = (level, price, description, button) => {
+
+    // Шаблонные строки и подстановки
+    const card = `
+                    <li class="price__item">
+
+                    <h3 class="price__level">${level}</h3>
+                    <h3 class="price__price">${price}</h3>
+                    <h3 class="price__description">${description}</h3>
+                    <button class="price__button"><span>${button}</span>
+                    </li>
+`;
+            return card;
+};
+/*
+        for (const key in apiUrl) { 
+        const card = apiUrl[key];
+        const cardElement = createCard( card.level, card.price, card.description, card.button);
+        priceList.insertAdjacentHTML('beforeend', cardElement);
+        }
+*/        
     
-});
+    // Загрузка данных с сервера
+    fetch(apiUrl)
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data); // Данные
+            console.log(typeof (data)); // Тип полученных данных
+            data.forEach((item) => {
+                const cardElement = createCard(
+                    item.level,
+                    item.price,
+                    item.description,
+                    item.button
+                    
+                );
+                priceList.insertAdjacentHTML("beforeend", cardElement);
+            });
+        })
+        .catch((error) => {
+            console.error("Ошибка при загрузке данных:", error);
+    });
+  }
+    
+})
