@@ -19,6 +19,18 @@
   height: 100%;
   object-fit: cover;
 }
+
+.header-section .container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .hero-container {
   display: flex;
   flex-direction: column;

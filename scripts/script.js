@@ -29,7 +29,7 @@ if (headerMenu) {
     console.log('Навигационное меню создано с помощью javascript!');
 }
 
-
+//Добавление в избранное
     const favoriteBlock = document.querySelector('.hero-actions');
 
     if (favoriteBlock) {
