@@ -4,14 +4,14 @@
 window.addEventListener("DOMContentLoaded", () => {
    
 
-// Динамическое формирование новигационного меню
+// Динамическое формирование навигационного меню
 const headerMenu = document.querySelector('.main-nav');
 
 if (headerMenu) {
     const headerList = headerMenu.querySelector('.header__list');
 
     const menuData = {
-        link1: { link: '#', title: 'Главное' },
+        link1: { link: 'index.html', title: 'Главное' },
         link2: { link: 'excursions.html', title: 'Экскурсии' },
         link3: { link: '#', title: 'Личный кабинет' }
     };
@@ -29,7 +29,8 @@ if (headerMenu) {
     console.log('Навигационное меню создано с помощью javascript!');
 }
 
-//Добавление в избранное
+/* Клик на добавление  в избранное */
+
     const favoriteBlock = document.querySelector('.hero-actions');
 
     if (favoriteBlock) {
@@ -57,6 +58,7 @@ if (headerMenu) {
             favoriteCount.textContent = count; // Обновляем счетчик
         });
     }
+
 
      //Задание 3,4 динамическая подгрузка
     const gidsContainer = document.querySelector(".gids");
