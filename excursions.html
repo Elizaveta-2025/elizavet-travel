@@ -50,9 +50,26 @@
   width: 40px;
   height: 57px;
 }
-.main-nav {
+.main-nav ul {
   display: flex;
   gap: 20px;
+  text-decoration: none;
+}
+.main-nav a {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+}
+.header__list li{
+  transition: all 0.2s ease-in-out;
+  list-style: none;
+}
+
+.header__list li:first-child a{
+  color: #ffc700;
+}
+.header__list li:hover{
+  opacity: 0.6;
 }
 .main-nav a {
   color: var(--background-light);
@@ -840,20 +857,22 @@
   </div>
   <div class="container">
     <header class="site-header">
-      <a href="#" class="logo">
-        <img src="images/logo.png" alt="Elizavet-travel Logo">
+      <a href="/" class="logo">
+        <img src="images/logo.png" alt="PeroTravel Logo">
       </a>
       <nav class="main-nav">
-        <a href="index.html">Главная</a>
-        <a href="#tour" class="active">Экскурсии</a>
-        <a href="#account">Личный кабинет</a>
+        <ul class="header__list">
+          <!-- <li><a href="#" class="active">Главная</a></li>
+          <li><a href="#popular-excursions">Экскурсии</a></li>
+          <li><a href="#">Личный кабинет</a></li> -->
+        </ul>
       </nav>
     </header>
     <div class="hero-content">
       <p class="hero-subtitle">Автобусный тур</p>
       <h1 class="hero-title">ЗОЛОТОЕ КОЛЬЦО АБХАЗИИ<br>(ИЗ АДЛЕРА)</h1>
       <div class="hero-actions">
-        <a href="#tour" class="btn btn-primary">
+        <a href="#tours" class="btn btn-primary">
           К другим экскурсиям
           <img src="images/1_1271.svg" alt="arrow icon" class="arrow-icon">
         </a>
@@ -1182,7 +1201,6 @@
     </div>
   </div>
 </section>
-
 <footer id="footer" class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -1190,8 +1208,8 @@
         <img src="images/2362948918c64aa97762b2a3a082962b9f5603a2.png" alt="Elizavet-travel Logo">
       </div>
       <nav class="footer-nav">
-        <a href="index.html">Главная</a>
-        <a href="#tour">Экскурсии</a>
+        <a href="#main">Главная</a>
+        <a href="#tours">Экскурсии</a>
         <a href="#account">Личный кабинет</a>
       </nav>
       <div class="footer-contacts">
