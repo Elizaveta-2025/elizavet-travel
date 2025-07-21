@@ -12,7 +12,7 @@ if (headerMenu) {
 
     const menuData = {
         link1: { link: '#', title: 'Главное' },
-        link2: { link: '#', title: 'Экскурсии' },
+        link2: { link: 'excursions.html', title: 'Экскурсии' },
         link3: { link: '#', title: 'Личный кабинет' }
     };
 
