@@ -11,7 +11,7 @@ if (headerMenu) {
     const headerList = headerMenu.querySelector('.header__list');
 
     const menuData = {
-        link1: { link: 'index.html', title: 'Главное' },
+        link1: { link: '#', title: 'Главная' },
         link2: { link: 'excursions.html', title: 'Экскурсии' },
         link3: { link: '#', title: 'Личный кабинет' }
     };
