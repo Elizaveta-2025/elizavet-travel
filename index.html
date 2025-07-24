@@ -1,403 +1,557 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
     <title>Elizavet-travel</title>
-
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="styles/hero.css">
-    <link rel="stylesheet" href="styles/popular-excursions-section.css">
-    <link rel="stylesheet" href="styles/about.css">
-    <link rel="stylesheet" href="styles/tour-types.css">
-    <link rel="stylesheet" href="styles/gallery.css">
-    <link rel="stylesheet" href="styles/testimonials.css">
-    <link rel="stylesheet" href="styles/gids.css">
-    <link rel="stylesheet" href="styles/price.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/preloader.css">
-    <link rel="stylesheet" href="styles/swiper.css">
-
-
-</head>
-
-<body>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/popular-excursions-section.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/tour-types.css" />
+    <link rel="stylesheet" href="styles/gallery.css" />
+    <link rel="stylesheet" href="styles/testimonials.css" />
+    <link rel="stylesheet" href="styles/gids.css" />
+    <link rel="stylesheet" href="styles/price.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/preloader.css" />
+    <link rel="stylesheet" href="styles/swiper.css" />
+  </head>
+  <body>
     <!--Предзагрузчик-->
     <div class="preloader">
-        <div class="loader">
-            <span class="dot1"></span>
-            <span class="dot2"></span>
-            <span class="dot3"></span>
-        </div>
-        Загрузка...
+      <div class="loader">
+        <span class="dot1"></span> <span class="dot2"></span>
+        <span class="dot3"></span>
+      </div>
+      Загрузка...
     </div>
-
     <div class="content">
-
-        <section id="hero" class="hero-section">
-            <div class="hero-background">
-                <img src="images/main-img.png" alt="Прекрасный пейзаж с озером и горами">
-            </div>
-            <div class="container hero-container">
-                <header class="main-header">
-                    <a href="#" class="logo">
-                        <img src="images/logo.png" alt="Elizavet Travel Logo">
-                    </a>
-                    <nav class="main-nav">
-                        <ul class="header__list">
-                            <!-- <li><a href="index.html" class="active">Главная</a></li>
+      <section id="hero" class="hero-section">
+        <div class="hero-background">
+          <img
+            src="images/main-img.png"
+            alt="Прекрасный пейзаж с озером и горами"
+          />
+        </div>
+        <div class="container hero-container">
+          <header class="main-header">
+            <a href="#" class="logo"
+              ><img src="images/logo.png" alt="Elizavet Travel Logo"
+            /></a>
+            <nav class="main-nav">
+              <ul class="header__list">
+                <!-- <li><a href="index.html" class="active">Главная</a></li>
           <li><a href="excursions.html">Экскурсии</a></li>
           <li><a href="#">Личный кабинет</a></li> -->
-                        </ul>
-                    </nav>
-            </div>
-
-                </header>
-            
-            <!-- Основной контент -->
-            
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1 class="main-title">
-          <span class="title-line-1">ПУТЕШЕСТВУЙ</span>
-          <span class="title-line-2">
-            <span class="title-connector">вместе с</span>
-            Elizavet Travel
-          </span>
-        </h1>
-                        <a href="#popular-excursions" class="btn btn-arrow">К экскурсиям</a>
-                    </div>
-                    
-                </div>
-
-                <div class="video-previews">
-                    <div class="container video-previews-container">
-                        <div class="video-card">
-                            <img src="images/6d4524c42416c42adb5ace9a6972db5710062560.png" alt="Video preview 1">
-                            <!--merged image-->
-                            <div class="play-button-wrapper">
-                                <img src="images/1_3209.svg" alt="Play button outer circle" style="position: absolute; top: 0; left: 0;">
-                                <img src="images/play.png" alt="Play button icon" style="position: absolute; top: 15px; left: 15px;">
-                            </div>
-                        </div>
-                        <div class="video-card">
-                            <img src="images/0b9853f09fbdf3aba96fb4f0dc9748d3a43032a8.png" alt="Video preview 2">
-                        </div>
-                    </div>
-                </div>
-        </section>
-<main>
-
-        <section id="popular-excursions" class="popular-excursions-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Популярные экскурсии</h2>
-                    <a href="#" class="view-all-link">Смотреть все</a>
-                </div>
-                <div class="excursions-grid">
-                    <article class="excursion-card">
-                        <img class="card-bg" src="images/64c167d470f74e728e0ecd6b914323b8e0d65413.png" alt="Обзорная по Сочи">
-                        <div class="card-overlay"></div>
-                        <div class="card-content">
-                            <p class="card-type">Автобусный тур</p>
-                            <h3 class="card-title">Обзорная по Сочи (из Адлера)</h3>
-                            <div class="card-info">
-                                <div class="info-item">
-                                    <img src="images/1_3195.svg" alt="time icon">
-                                    <span>6 часов</span>
-                                </div>
-                                <div class="info-item">
-                                    <img src="images/1_3181.svg" alt="price icon">
-                                    <span>618 ₽</span>
-                                </div>
-                            </div>
-                            <p class="card-description">Приглашаем вас на экскурсию "Обзорная по Большому Сочи": Экскурсия начнется с подъёма на гору Большой Ахун...</p>
-                            <a href="#" class="btn">Подробнее</a>
-                        </div>
-                    </article>
-                    <article class="excursion-card">
-                        <img class="card-bg" src="images/a09e8be07a2d9748f467b217061c7561fe0650af.png" alt="Конные прогулки">
-                        <div class="card-overlay"></div>
-                        <div class="card-content">
-                            <p class="card-type">Конный тур</p>
-                            <h3 class="card-title">Конные прогулки</h3>
-                            <div class="card-info">
-                                <div class="info-item">
-                                    <img src="images/1_3168.svg" alt="time icon">
-                                    <span>1,5 часа</span>
-                                </div>
-                                <div class="info-item">
-                                    <img src="images/1_3154.svg" alt="price icon">
-                                    <span>1 809 ₽</span>
-                                </div>
-                            </div>
-                            <p class="card-description">Конные прогулки проходят в Лазурной долине. С долины открывается красивый вид на море, горы и лес...</p>
-                            <a href="#" class="btn">Подробнее</a>
-                        </div>
-                    </article>
-                    <article class="excursion-card">
-                        <img class="card-bg" src="images/d39cca959915328f80ddbcfe3528ced8957eaea2.png" alt="Пасть дракона">
-                        <div class="card-overlay"></div>
-                        <div class="card-content">
-                            <p class="card-type">Квадротур</p>
-                            <h3 class="card-title">Пасть дракона</h3>
-                            <div class="card-info">
-                                <div class="info-item">
-                                    <img src="images/1_3141.svg" alt="time icon">
-                                    <span>2,5 часа</span>
-                                </div>
-                                <div class="info-item">
-                                    <img src="images/1_3127.svg" alt="price icon">
-                                    <span>3 515 ₽</span>
-                                </div>
-                            </div>
-                            <p class="card-description">Маршрут на Квадроциклах проходит по горной реке Мзымта вдоль белых скал и самшитовый лес...</p>
-                            <a href="#" class="btn">Подробнее</a>
-                        </div>
-                    </article>
-                    <article class="excursion-card">
-                        <img class="card-bg" src="images/d394f1fcbbde3122d0f40e34f0f2ce664b8cccfd.png" alt="Женский монастырь">
-                        <div class="card-overlay"></div>
-                        <div class="card-content">
-                            <p class="card-type">Автобусный тур</p>
-                            <h3 class="card-title">Женский монастырь</h3>
-                            <div class="card-info">
-                                <div class="info-item">
-                                    <img src="images/1_3114.svg" alt="time icon">
-                                    <span>4 часа</span>
-                                </div>
-                                <div class="info-item">
-                                    <img src="images/1_3100.svg" alt="price icon">
-                                    <span>618 ₽</span>
-                                </div>
-                            </div>
-                            <p class="card-description">Троице - Георгиевский женский монастырь расположен в селе Лесное в живописном месте...</p>
-                            <a href="#" class="btn">Подробнее</a>
-                        </div>
-                    </article>
-                </div>
-                <div class="slider-controls">
-                    <img src="images/1_3089.svg" alt="Slider controls">
-                    <div class="slider-track">
-                        <div class="slider-progress"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="about" class="about-section">
-            <div class="about-bg-image">
-                <img src="images/499abcb1d52e22f95c1685735a5be764cbd5c2ee.png" alt="Artistic depiction of a city canal scene">
-            </div>
-            <div class="about-content-box">
-                <h2 class="section-title">О нас</h2>
-                <p>
-                    <strong>PeroTravel</strong> - Первый онлайн-сервис по бронированию экскурсий без очередей и операторов. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-                </p>
-            </div>
-        </section>
-        <section id="tour-types" class="tour-types-section">
-            <div class="container">
-                <h2 class="section-title">Виды экскурсий</h2>
-                <div class="tour-types-grid">
-                    <div class="tour-type-item">
-                        <img src="images/43a799d7a2d169555c408dff184238d1de39b2ae.png" alt="Bus icon">
-                        <div class="tour-type-text">
-                            <h3>Автобусный тур</h3>
-                            <p>Один из самых насыщенных впечатлениями, доступных по цене и популярных видов отдыха. Во время одной поездки можно посмотреть достопримечательности сразу нескольких городов...</p>
-                        </div>
-                    </div>
-                    <div class="tour-type-item">
-                        <img src="images/a1ee0c81f61a05bf1300854bba0a7b5d72a09143.png" alt="Jeep icon">
-                        <div class="tour-type-text">
-                            <h3>Джиппинг</h3>
-                            <p>Это путешествие на автомобилях высокой проходимости с преодолением естественных препятствий, это экстремальный вид спорта и отдыха...</p>
-                        </div>
-                    </div>
-                    <div class="tour-type-item">
-                        <img src="images/cd98f05be66fc2e2ca69c6381af65cbccd7a82a0.png" alt="Yacht icon">
-                        <div class="tour-type-text">
-                            <h3>Яхтинг</h3>
-                            <p>Это то же, что круиз на лайнере или прогулка на пароме, только на яхте больше свободы, размеры судна в разы меньше, нет назойливой команды...</p>
-                        </div>
-                    </div>
-                    <div class="tour-type-item">
-                        <img src="images/4525e6ffdd2b39e5ca9ce21d4bd7af333e2624ac.png" alt="Canyoning icon">
-                        <div class="tour-type-text">
-                            <h3>Каньонинг</h3>
-                            <p>Это экстремально-спортивный вид отдыха, который заключается в преодолении каньонов (обводненных или нет) при помощи альпинистского и иного снаряжения...</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="tour-types-footer">
-                    <p>Выбирайте на нашем сайте экскурсию, которая подходит именно вам и записывайтесь онлайн без очередей, просто и быстро!</p>
-                    <a href="#popular-excursions" class="btn btn-arrow">К экскурсиям</a>
-                </div>
-
-            </div>
-        </section>
-        <section id="gallery" class="gallery-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Галерея</h2>
-                    <a href="#" class="view-all-link">Смотреть все</a>
-                </div>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item item-1"><img src="images/dd11270c618047585818a6724c61be49890f1b88.png" alt="Gallery image 1"></div>
-                <div class="gallery-item item-2"><img src="images/d39cca959915328f80ddbcfe3528ced8957eaea2.png" alt="Gallery image 2"></div>
-                <div class="gallery-item item-3"><img src="images/aba0264c03ae568787532436b93eb604d8968d03.png" alt="Gallery image 3"></div>
-                <div class="gallery-item item-4"><img src="images/72a94ca2ac0828d6438b37174c54c9ce73763cc1.png" alt="Gallery image 4"></div>
-                <div class="gallery-item item-5"><img src="images/e59f20559adaffae9bf06f3f516af4689ca8fcb9.png" alt="Gallery image 5"></div>
-                <div class="gallery-item item-6"><img src="images/d1a4f7a7e0d337c8a5dc24d80a81a94ea627bfef.png" alt="Gallery image 6"></div>
-                <div class="gallery-item item-7"><img src="images/3d6189b4a0a1b71ff193fc895afda6186308eb1a.png" alt="Gallery image 7"></div>
-                <div class="gallery-item item-8"><img src="images/69449b915c87a4d60e7704438747f3ceff84de49.png" alt="Gallery image 8"></div>
-            </div>
-        </section>
-        <section id="testimonials" class="testimonials-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Отзывы</h2>
-                    <a href="#" class="view-all-link">Смотреть все</a>
-                </div>
-                <div class="testimonials-wrapper">
-                    <div class="testimonial-card">
-                        <div class="testimonial-photo">
-                            <img src="images/77b165d7cb632d3571d960b32d5468d67b43f4d8.png" alt="Иван Иванов">
-                        </div>
-                        <div class="testimonial-content">
-                            <span class="quote-mark">”</span>
-                            <h3>Иван Иванов, 25 лет</h3>
-                            <p>Всё отлично! Можно забронировать и оплатить онлайн. Автобусы комфортные, гиды хорошие. Есть и школьные туры, и путёвки в санаторий. Кто хочет путешествовать с комфортом, это место для вас!...</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-photo">
-                            <img src="images/a5fe3956cebfed890cb5929684934c84831a3508.png" alt="Иван Иванов">
-                        </div>
-                        <div class="testimonial-content">
-                            <span class="quote-mark">”</span>
-                            <h3>Иван Иванов, 25 лет</h3>
-                            <p>Один из самых лучших турагентство в городе Йошкар-Ола. Обслуживание на высоте, персонал добрый и хороший. Мне подобрали замечательный отдых, была вкусная еда и удобное расположение. Меня зацепила идеальная чистота. Мне очень
-                                понравилось, буду приходить только сюда!!!...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-controls">
-                    <img src="images/1_3027.svg" alt="Элементы управления ползунком">
-                    <div class="slider-track">
-                        <div class="slider-progress"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="images/slide1.jpg" alt="Slide 1" class="swiper-slider-image">
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/slide2.jpg" alt="Slide 2" class="swiper-slider-image">
-                </div>
-
-                <div class="swiper-slide"></div>
-                <img src="images/slide3.jpg" alt="Slide 3" class="swiper-slider-image">
-            </div>
-
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+              </ul>
+            </nav>
+          </header>
         </div>
 
-        <section class="gids">
-            <div class="container">
-                <h2 class="gids__title">
-       Профессиональные гиды
-    </h2>
-                <ul class="gids__card">
-                    <li class="gids__item">
-                        <img src="images/gid1.png" alt="Гид 1" class="gids__img">
-                        <div class="gids__item-content">
-                            <h3 class="gids__subtitle">Гид 1</h3>
-                            <p class="gids__test">Историк</p>
-                            <a href="#hero" class="gids__link" type="button">
-                                <span>Подробнее</span>
-                            </a>
-                        </div>
-
-                    </li>
-                    <li class="gids__item">
-                        <img src="images/72a94ca2ac0828d6438b37174c54c9ce73763cc1.png" alt="Гид 2" class="gids__img">
-                        <div class="gids__item-content">
-                            <h3 class="gids__subtitle">Гид 2</h3>
-                            <p class="gids__test">Историк</p>
-                            <a href="#hero" class="gids__link" type="button">
-                                <span>Подробнее</span>
-                            </a>
-                        </div>
-
-                    </li>
-                    <li class="gids__item">
-                        <img src="images/d1a4f7a7e0d337c8a5dc24d80a81a94ea627bfef.png" alt="Гид 3" class="gids__img">
-                        <div class="gids__item-content">
-                            <h3 class="gids__subtitle">Гид 3</h3>
-                            <p class="gids__test">Историк</p>
-                            <a href="#hero" class="gids__link" type="button">
-                                <span>Подробнее</span>
-                            </a>
-                        </div>
-
-                    </li>
-                    <li class="gids__item">
-                        <img src="images/69449b915c87a4d60e7704438747f3ceff84de49.png" alt="Гид 4" class="gids__img">
-                        <div class="gids__item-content">
-                            <h3 class="gids__subtitle">Гид 4</h3>
-                            <p class="gids__test">Историк</p>
-                            <a href="#hero" class="gids__link" type="button">
-                                <span>Подробнее</span>
-                            </a>
-                        </div>
-
-                    </li>
-                    <li class="gids__item">
-                        <img src="images/0b9853f09fbdf3aba96fb4f0dc9748d3a43032a8.png" alt="Гид 5" class="gids__img">
-                        <div class="gids__item-content">
-                            <h3 class="gids__subtitle">Гид 5</h3>
-                            <p class="gids__test">Историк</p>
-                            <a href="#hero" class="gids__link" type="button">
-                                <span>Подробнее</span>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="gids__item">
-                        <img src="images/6d4524c42416c42adb5ace9a6972db5710062560.png" alt="Гид 5" class="gids__img">
-                        <div class="gids__item-content">
-                            <h3 class="gids__subtitle">Гид 6</h3>
-                            <p class="gids__test">Историк</p>
-                            <a href="#hero" class="gids__link" type="button">
-                                <span>Подробнее</span>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
+        
+            
+        <!-- Основной контент -->
+        <main class="container" id="main">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="main-title">
+              <span class="title-line-1">ПУТЕШЕСТВУЙ</span>
+              <span class="title-line-2"
+                ><span class="title-connector">вместе с</span> Elizavet
+                Travel</span
+              >
+            </h1>
+            <a href="#popular-excursions" class="btn btn-arrow">К экскурсиям</a>
+          </div>
+        </div>
+        <div class="video-previews">
+          <div class="container video-previews-container">
+            <div class="video-card">
+              <img
+                src="images/6d4524c42416c42adb5ace9a6972db5710062560.png" alt="Video preview 1"/><!--merged image-->
+              <div class="play-button-wrapper">
+                <img
+                  src="images/1_3209.svg"
+                  alt="Play button outer circle"
+                  style="position: absolute; top: 0; left: 0"
+                />
+                <img
+                  src="images/play.png"
+                  alt="Play button icon"
+                  style="position: absolute; top: 15px; left: 15px"
+                />
+              </div>
             </div>
-
+            <div class="video-card">
+              <img
+                src="images/0b9853f09fbdf3aba96fb4f0dc9748d3a43032a8.png"
+                alt="Video preview 2"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <main>
+        <section id="popular-excursions" class="popular-excursions-section">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Популярные экскурсии</h2>
+              <a href="#" class="view-all-link">Смотреть все</a>
+            </div>
+            <div class="excursions-grid">
+              <article class="excursion-card">
+                <img
+                  class="card-bg"
+                  src="images/64c167d470f74e728e0ecd6b914323b8e0d65413.png"
+                  alt="Обзорная по Сочи"
+                />
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <p class="card-type">Автобусный тур</p>
+                  <h3 class="card-title">Обзорная по Сочи (из Адлера)</h3>
+                  <div class="card-info">
+                    <div class="info-item">
+                      <img src="images/1_3195.svg" alt="time icon" />
+                      <span>6 часов</span>
+                    </div>
+                    <div class="info-item">
+                      <img src="images/1_3181.svg" alt="price icon" />
+                      <span>618 ₽</span>
+                    </div>
+                  </div>
+                  <p class="card-description">
+                    Приглашаем вас на экскурсию "Обзорная по Большому Сочи":
+                    Экскурсия начнется с подъёма на гору Большой Ахун...
+                  </p>
+                  <a href="#" class="btn">Подробнее</a>
+                </div>
+              </article>
+              <article class="excursion-card">
+                <img
+                  class="card-bg"
+                  src="images/a09e8be07a2d9748f467b217061c7561fe0650af.png"
+                  alt="Конные прогулки"
+                />
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <p class="card-type">Конный тур</p>
+                  <h3 class="card-title">Конные прогулки</h3>
+                  <div class="card-info">
+                    <div class="info-item">
+                      <img src="images/1_3168.svg" alt="time icon" />
+                      <span>1,5 часа</span>
+                    </div>
+                    <div class="info-item">
+                      <img src="images/1_3154.svg" alt="price icon" />
+                      <span>1 809 ₽</span>
+                    </div>
+                  </div>
+                  <p class="card-description">
+                    Конные прогулки проходят в Лазурной долине. С долины
+                    открывается красивый вид на море, горы и лес...
+                  </p>
+                  <a href="#" class="btn">Подробнее</a>
+                </div>
+              </article>
+              <article class="excursion-card">
+                <img
+                  class="card-bg"
+                  src="images/d39cca959915328f80ddbcfe3528ced8957eaea2.png"
+                  alt="Пасть дракона"
+                />
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <p class="card-type">Квадротур</p>
+                  <h3 class="card-title">Пасть дракона</h3>
+                  <div class="card-info">
+                    <div class="info-item">
+                      <img src="images/1_3141.svg" alt="time icon" />
+                      <span>2,5 часа</span>
+                    </div>
+                    <div class="info-item">
+                      <img src="images/1_3127.svg" alt="price icon" />
+                      <span>3 515 ₽</span>
+                    </div>
+                  </div>
+                  <p class="card-description">
+                    Маршрут на Квадроциклах проходит по горной реке Мзымта вдоль
+                    белых скал и самшитовый лес...
+                  </p>
+                  <a href="#" class="btn">Подробнее</a>
+                </div>
+              </article>
+              <article class="excursion-card">
+                <img
+                  class="card-bg"
+                  src="images/d394f1fcbbde3122d0f40e34f0f2ce664b8cccfd.png"
+                  alt="Женский монастырь"
+                />
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                  <p class="card-type">Автобусный тур</p>
+                  <h3 class="card-title">Женский монастырь</h3>
+                  <div class="card-info">
+                    <div class="info-item">
+                      <img src="images/1_3114.svg" alt="time icon" />
+                      <span>4 часа</span>
+                    </div>
+                    <div class="info-item">
+                      <img src="images/1_3100.svg" alt="price icon" />
+                      <span>618 ₽</span>
+                    </div>
+                  </div>
+                  <p class="card-description">
+                    Троице - Георгиевский женский монастырь расположен в селе
+                    Лесное в живописном месте...
+                  </p>
+                  <a href="#" class="btn">Подробнее</a>
+                </div>
+              </article>
+            </div>
+            <div class="slider-controls">
+              <img src="images/1_3089.svg" alt="Slider controls" />
+              <div class="slider-track">
+                <div class="slider-progress"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="about" class="about-section">
+          <div class="about-bg-image">
+            <img
+              src="images/499abcb1d52e22f95c1685735a5be764cbd5c2ee.png"
+              alt="Artistic depiction of a city canal scene"
+            />
+          </div>
+          <div class="about-content-box">
+            <h2 class="section-title">О нас</h2>
+            <p>
+              <strong>PeroTravel</strong> - Первый онлайн-сервис по бронированию
+              экскурсий без очередей и операторов. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo.
+            </p>
+          </div>
+        </section>
+        <section id="tour-types" class="tour-types-section">
+          <div class="container">
+            <h2 class="section-title">Виды экскурсий</h2>
+            <div class="tour-types-grid">
+              <div class="tour-type-item">
+                <img
+                  src="images/43a799d7a2d169555c408dff184238d1de39b2ae.png"
+                  alt="Bus icon"
+                />
+                <div class="tour-type-text">
+                  <h3>Автобусный тур</h3>
+                  <p>
+                    Один из самых насыщенных впечатлениями, доступных по цене и
+                    популярных видов отдыха. Во время одной поездки можно
+                    посмотреть достопримечательности сразу нескольких городов...
+                  </p>
+                </div>
+              </div>
+              <div class="tour-type-item">
+                <img
+                  src="images/a1ee0c81f61a05bf1300854bba0a7b5d72a09143.png"
+                  alt="Jeep icon"
+                />
+                <div class="tour-type-text">
+                  <h3>Джиппинг</h3>
+                  <p>
+                    Это путешествие на автомобилях высокой проходимости с
+                    преодолением естественных препятствий, это экстремальный вид
+                    спорта и отдыха...
+                  </p>
+                </div>
+              </div>
+              <div class="tour-type-item">
+                <img
+                  src="images/cd98f05be66fc2e2ca69c6381af65cbccd7a82a0.png"
+                  alt="Yacht icon"
+                />
+                <div class="tour-type-text">
+                  <h3>Яхтинг</h3>
+                  <p>
+                    Это то же, что круиз на лайнере или прогулка на пароме,
+                    только на яхте больше свободы, размеры судна в разы меньше,
+                    нет назойливой команды...
+                  </p>
+                </div>
+              </div>
+              <div class="tour-type-item">
+                <img
+                  src="images/4525e6ffdd2b39e5ca9ce21d4bd7af333e2624ac.png"
+                  alt="Canyoning icon"
+                />
+                <div class="tour-type-text">
+                  <h3>Каньонинг</h3>
+                  <p>
+                    Это экстремально-спортивный вид отдыха, который заключается
+                    в преодолении каньонов (обводненных или нет) при помощи
+                    альпинистского и иного снаряжения...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tour-types-footer">
+              <p>
+                Выбирайте на нашем сайте экскурсию, которая подходит именно вам
+                и записывайтесь онлайн без очередей, просто и быстро!
+              </p>
+              <a href="#popular-excursions" class="btn btn-arrow"
+                >К экскурсиям</a
+              >
+            </div>
+          </div>
+        </section>
+        <section id="gallery" class="gallery-section">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Галерея</h2>
+              <a href="#" class="view-all-link">Смотреть все</a>
+            </div>
+          </div>
+          <div class="gallery-grid">
+            <div class="gallery-item item-1">
+              <img
+                src="images/dd11270c618047585818a6724c61be49890f1b88.png"
+                alt="Gallery image 1"
+              />
+            </div>
+            <div class="gallery-item item-2">
+              <img
+                src="images/d39cca959915328f80ddbcfe3528ced8957eaea2.png"
+                alt="Gallery image 2"
+              />
+            </div>
+            <div class="gallery-item item-3">
+              <img
+                src="images/aba0264c03ae568787532436b93eb604d8968d03.png"
+                alt="Gallery image 3"
+              />
+            </div>
+            <div class="gallery-item item-4">
+              <img
+                src="images/72a94ca2ac0828d6438b37174c54c9ce73763cc1.png"
+                alt="Gallery image 4"
+              />
+            </div>
+            <div class="gallery-item item-5">
+              <img
+                src="images/e59f20559adaffae9bf06f3f516af4689ca8fcb9.png"
+                alt="Gallery image 5"
+              />
+            </div>
+            <div class="gallery-item item-6">
+              <img
+                src="images/d1a4f7a7e0d337c8a5dc24d80a81a94ea627bfef.png"
+                alt="Gallery image 6"
+              />
+            </div>
+            <div class="gallery-item item-7">
+              <img
+                src="images/3d6189b4a0a1b71ff193fc895afda6186308eb1a.png"
+                alt="Gallery image 7"
+              />
+            </div>
+            <div class="gallery-item item-8">
+              <img
+                src="images/69449b915c87a4d60e7704438747f3ceff84de49.png"
+                alt="Gallery image 8"
+              />
+            </div>
+          </div>
+        </section>
+        <section id="testimonials" class="testimonials-section">
+          <div class="container">
+            <div class="section-header">
+              <h2 class="section-title">Отзывы</h2>
+              <a href="#" class="view-all-link">Смотреть все</a>
+            </div>
+            <div class="testimonials-wrapper">
+              <div class="testimonial-card">
+                <div class="testimonial-photo">
+                  <img
+                    src="images/77b165d7cb632d3571d960b32d5468d67b43f4d8.png"
+                    alt="Иван Иванов"
+                  />
+                </div>
+                <div class="testimonial-content">
+                  <span class="quote-mark">”</span>
+                  <h3>Иван Иванов, 25 лет</h3>
+                  <p>
+                    Всё отлично! Можно забронировать и оплатить онлайн. Автобусы
+                    комфортные, гиды хорошие. Есть и школьные туры, и путёвки в
+                    санаторий. Кто хочет путешествовать с комфортом, это место
+                    для вас!...
+                  </p>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <div class="testimonial-photo">
+                  <img
+                    src="images/a5fe3956cebfed890cb5929684934c84831a3508.png"
+                    alt="Иван Иванов"
+                  />
+                </div>
+                <div class="testimonial-content">
+                  <span class="quote-mark">”</span>
+                  <h3>Иван Иванов, 25 лет</h3>
+                  <p>
+                    Один из самых лучших турагентство в городе Йошкар-Ола.
+                    Обслуживание на высоте, персонал добрый и хороший. Мне
+                    подобрали замечательный отдых, была вкусная еда и удобное
+                    расположение. Меня зацепила идеальная чистота. Мне очень
+                    понравилось, буду приходить только сюда!!!...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-controls">
+              <img
+                src="images/1_3027.svg"
+                alt="Элементы управления ползунком"
+              />
+              <div class="slider-track">
+                <div class="slider-progress"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="images/slide1.jpg"
+                alt="Slide 1"
+                class="swiper-slider-image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="images/slide2.jpg"
+                alt="Slide 2"
+                class="swiper-slider-image"
+              />
+            </div>
+            <div class="swiper-slide"></div>
+            <img
+              src="images/slide3.jpg"
+              alt="Slide 3"
+              class="swiper-slider-image"
+            />
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <section class="gids">
+          <div class="container">
+            <h2 class="gids__title">Профессиональные гиды</h2>
+            <ul class="gids__card">
+              <li class="gids__item">
+                <img src="images/gid1.png" alt="Гид 1" class="gids__img" />
+                <div class="gids__item-content">
+                  <h3 class="gids__subtitle">Гид 1</h3>
+                  <p class="gids__test">Историк</p>
+                  <a href="#hero" class="gids__link" type="button"
+                    ><span>Подробнее</span></a
+                  >
+                </div>
+              </li>
+              <li class="gids__item">
+                <img
+                  src="images/72a94ca2ac0828d6438b37174c54c9ce73763cc1.png"
+                  alt="Гид 2"
+                  class="gids__img"
+                />
+                <div class="gids__item-content">
+                  <h3 class="gids__subtitle">Гид 2</h3>
+                  <p class="gids__test">Историк</p>
+                  <a href="#hero" class="gids__link" type="button"
+                    ><span>Подробнее</span></a
+                  >
+                </div>
+              </li>
+              <li class="gids__item">
+                <img
+                  src="images/d1a4f7a7e0d337c8a5dc24d80a81a94ea627bfef.png"
+                  alt="Гид 3"
+                  class="gids__img"
+                />
+                <div class="gids__item-content">
+                  <h3 class="gids__subtitle">Гид 3</h3>
+                  <p class="gids__test">Историк</p>
+                  <a href="#hero" class="gids__link" type="button"
+                    ><span>Подробнее</span></a
+                  >
+                </div>
+              </li>
+              <li class="gids__item">
+                <img
+                  src="images/69449b915c87a4d60e7704438747f3ceff84de49.png"
+                  alt="Гид 4"
+                  class="gids__img"
+                />
+                <div class="gids__item-content">
+                  <h3 class="gids__subtitle">Гид 4</h3>
+                  <p class="gids__test">Историк</p>
+                  <a href="#hero" class="gids__link" type="button"
+                    ><span>Подробнее</span></a
+                  >
+                </div>
+              </li>
+              <li class="gids__item">
+                <img
+                  src="images/0b9853f09fbdf3aba96fb4f0dc9748d3a43032a8.png"
+                  alt="Гид 5"
+                  class="gids__img"
+                />
+                <div class="gids__item-content">
+                  <h3 class="gids__subtitle">Гид 5</h3>
+                  <p class="gids__test">Историк</p>
+                  <a href="#hero" class="gids__link" type="button"
+                    ><span>Подробнее</span></a
+                  >
+                </div>
+              </li>
+              <li class="gids__item">
+                <img
+                  src="images/6d4524c42416c42adb5ace9a6972db5710062560.png"
+                  alt="Гид 5"
+                  class="gids__img"
+                />
+                <div class="gids__item-content">
+                  <h3 class="gids__subtitle">Гид 6</h3>
+                  <p class="gids__test">Историк</p>
+                  <a href="#hero" class="gids__link" type="button"
+                    ><span>Подробнее</span></a
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="price container">
-            <h2 class="price__title">Выбирите нужный тариф</h2>
-            <ul class="price__list">
-                <!--
+          <h2 class="price__title">Выбирите нужный тариф</h2>
+          <ul class="price__list">
+            <!--
           Статические карточки закомментированы, чтобы создать их динамически через JS
           <li class="price__item">
               <p class="price__level">– Социальный –</p>
@@ -405,91 +559,92 @@
               <p class="price__description">Историк</p>
               <button class="price__button">Оставить заявку</button>
           </li>
-          -->
-            </ul>
+          --></ul>
         </section>
         <section id="contact" class="contact-section">
-            <div class="contact-bg">
-                <img src="images/d7b463437c59f0eb3d59497e76861bf3a363da36.png" alt="Человек в плаще в густом зелёном лесу">
-            </div>
-            <div class="contact-form-wrapper">
-                <div class="contact-form-box">
-                    <h2>Остались вопросы?</h2>
-                    <p>Оставь заявку и мы ответим</p>
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Имя</label>
-                            <input type="text" id="name">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Телефон</label>
-                            <input type="tel" id="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Почта</label>
-                            <input type="email" id="email">
-                        </div>
-                        <button type="submit" class="btn">Оставить заявку</button>
-                    </form>
+          <div class="contact-bg">
+            <img
+              src="images/d7b463437c59f0eb3d59497e76861bf3a363da36.png"
+              alt="Человек в плаще в густом зелёном лесу"
+            />
+          </div>
+          <div class="contact-form-wrapper">
+            <div class="contact-form-box">
+              <h2>Остались вопросы?</h2>
+              <p>Оставь заявку и мы ответим</p>
+              <form>
+                <div class="form-group">
+                  <label for="name">Имя</label> <input type="text" id="name" />
                 </div>
+                <div class="form-group">
+                  <label for="phone">Телефон</label>
+                  <input type="tel" id="phone" />
+                </div>
+                <div class="form-group">
+                  <label for="email">Почта</label>
+                  <input type="email" id="email" />
+                </div>
+                <button type="submit" class="btn">Оставить заявку</button>
+              </form>
             </div>
+          </div>
         </section>
-        </main>
+      </main>
 
-        <!-- Подвал -->
-        <footer id="footer" class="site-footer">
-            <div class="container footer-container">
-                <div class="footer-col footer-logo-col">
-                    <a href="#" class="footer-logo">
-                        <img src="images/2362948918c64aa97762b2a3a082962b9f5603a2.png" alt="Elizavet-travel Logo">
-                    </a>
-                </div>
-                <div class="footer-col">
-                    <h4>Меню</h4>
-                    <ul>
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#popular-excursions">Экскурсии</a></li>
-                        <li><a href="#">Личный кабинет</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Контакты</h4>
-                    <ul>
-                        <li class="contact-item">
-                            <img src="images/1_869.svg" alt="WhatsApp">
-                            <span>+7 964 123 11 00</span>
-                        </li>
-                        <li class="contact-item">
-                            <img src="images/1_864.png" alt="Telegram">
-                            <span>+7 918 154 11 44</span>
-                        </li>
-                        <li class="contact-item">
-                            <img src="images/1_864.svg" alt="Telegram Bot">
-                            <span>Телеграм-бот Elizavet_Travel</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>E-Mail</h4>
-                    <ul>
-                        <li class="contact-item">
-                            <img src="images/1_850.svg" alt="Email">
-                            <span>office@Elizavet_travel.ru</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-col footer-socials-col">
-                    <h4>Соц. сети</h4>
-                    <div class="footer-socials">
-                        <a href="#"><img src="images/1_846.svg" alt="VK"></a>
-                    </div>
-                </div>
+      <!-- Подвал -->
+      <footer id="footer" class="site-footer">
+        <div class="container footer-container">
+          <div class="footer-col footer-logo-col">
+            <a href="#" class="footer-logo"
+              ><img
+                src="images/2362948918c64aa97762b2a3a082962b9f5603a2.png"
+                alt="Elizavet-travel Logo"
+            /></a>
+          </div>
+          <div class="footer-col">
+            <h4>Меню</h4>
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#popular-excursions">Экскурсии</a></li>
+              <li><a href="#">Личный кабинет</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Контакты</h4>
+            <ul>
+              <li class="contact-item">
+                <img src="images/1_869.svg" alt="WhatsApp" />
+                <span>+7 964 123 11 00</span>
+              </li>
+              <li class="contact-item">
+                <img src="images/1_864.png" alt="Telegram" />
+                <span>+7 918 154 11 44</span>
+              </li>
+              <li class="contact-item">
+                <img src="images/1_864.svg" alt="Telegram Bot" />
+                <span>Телеграм-бот Elizavet_Travel</span>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>E-Mail</h4>
+            <ul>
+              <li class="contact-item">
+                <img src="images/1_850.svg" alt="Email" />
+                <span>office@Elizavet_travel.ru</span>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col footer-socials-col">
+            <h4>Соц. сети</h4>
+            <div class="footer-socials">
+              <a href="#"><img src="images/1_846.svg" alt="VK" /></a>
             </div>
-        </footer>
+          </div>
+        </div>
+      </footer>
     </div>
-    <script src="scripts/script.js" defer></script>
+    <script src="scripts/script.js" defer="defer"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-</body>
-
+  </body>
 </html>
